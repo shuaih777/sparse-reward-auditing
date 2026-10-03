@@ -6,9 +6,8 @@ The upstream training implementation is
 The original notice is preserved in `licenses/llm-verifier-noise-MIT.txt`.
 The bootstrap script fetches that source and applies the included local patch.
 
-A release license for the original experimental code has not yet been
-selected by its author. Public availability of these files does not grant
-a new license for that code.
+The original experimental code is released under the MIT License;
+see [LICENSE](LICENSE). Copyright (c) 2026 Shuai Huang.
 
 Dependencies retain their own licenses. Qwen weights and Reasoning Gym content
 are separate from this code package and retain their respective terms.

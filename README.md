@@ -159,6 +159,8 @@ checkpoints did not include optimizer state.
 
 ## Provenance and licenses
 
+The original experimental code is available under the [MIT License](LICENSE).
+
 `provenance/code_sources.json` records hashes of the original code files.
 Third-party attribution is in `LICENSES.md`; the upstream MIT license is
 preserved in `licenses/llm-verifier-noise-MIT.txt`.

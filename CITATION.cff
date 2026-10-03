@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "Please cite the accompanying paper when using this code."
 title: "When Group Normalization Undermines Sparse Reward Auditing in RLVR"
 type: software
+license: MIT
 repository-code: "https://github.com/shuaih777/sparse-reward-auditing"
 authors:
   - family-names: Huang

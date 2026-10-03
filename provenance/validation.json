@@ -11,5 +11,5 @@
   "code_entrypoint_import_closure": "All local script import dependencies included",
   "fresh_dependency_install_performed": false,
   "gpu_training_performed": false,
-  "first_party_license": "Not selected; no new rights granted by packaging"
+  "first_party_license": "MIT; selected by the author after the initial code publication"
 }

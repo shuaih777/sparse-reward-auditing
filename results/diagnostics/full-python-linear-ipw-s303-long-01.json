@@ -1,0 +1,2246 @@
+{
+  "run_id": "full-python-linear-ipw-s303-long-01",
+  "records": [
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 1,
+      "audit_indices": [
+        177,
+        117
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.26953125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 2,
+      "audit_indices": [
+        194,
+        91,
+        225
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.283203125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 3,
+      "audit_indices": [
+        233,
+        196
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.236328125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 4,
+      "audit_indices": [
+        96,
+        159,
+        123
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.2041015625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 5,
+      "audit_indices": [
+        98,
+        246
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 6.625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 6,
+      "audit_indices": [
+        93,
+        213,
+        185
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 3.09375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 7,
+      "audit_indices": [
+        171,
+        158
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.25390625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 8,
+      "audit_indices": [
+        163,
+        159,
+        200
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.259765625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 9,
+      "audit_indices": [
+        200,
+        61,
+        19
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.2333984375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 10,
+      "audit_indices": [
+        174,
+        160
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 2.8125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 11,
+      "audit_indices": [
+        102,
+        44,
+        154
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.24609375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 12,
+      "audit_indices": [
+        217,
+        46
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.2275390625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 13,
+      "audit_indices": [
+        49,
+        181,
+        61
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.2734375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 14,
+      "audit_indices": [
+        237,
+        49
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.1884765625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 15,
+      "audit_indices": [
+        202,
+        210,
+        107
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.193359375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 16,
+      "audit_indices": [
+        216,
+        131
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.1923828125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 17,
+      "audit_indices": [
+        14,
+        66,
+        57
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.2158203125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 18,
+      "audit_indices": [
+        84,
+        30,
+        107
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.208984375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 19,
+      "audit_indices": [
+        177,
+        30
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.90625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 20,
+      "audit_indices": [
+        231,
+        84,
+        163
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.201171875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 21,
+      "audit_indices": [
+        244,
+        69
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.201171875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 22,
+      "audit_indices": [
+        43,
+        215,
+        159
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.279296875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 23,
+      "audit_indices": [
+        151,
+        16
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.1923828125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 24,
+      "audit_indices": [
+        45,
+        215,
+        20
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.1787109375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 25,
+      "audit_indices": [
+        67,
+        197,
+        69
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.2138671875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 26,
+      "audit_indices": [
+        214,
+        189
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.18359375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 27,
+      "audit_indices": [
+        97,
+        4,
+        122
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.1875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 28,
+      "audit_indices": [
+        63,
+        162
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.259765625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 29,
+      "audit_indices": [
+        117,
+        102,
+        182
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.177734375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 30,
+      "audit_indices": [
+        225,
+        197
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.244140625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 31,
+      "audit_indices": [
+        18,
+        2,
+        193
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 3.765625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 32,
+      "audit_indices": [
+        45,
+        219
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 4.84375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 33,
+      "audit_indices": [
+        90,
+        95,
+        6
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.2470703125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 34,
+      "audit_indices": [
+        196,
+        223,
+        127
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 3.265625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 35,
+      "audit_indices": [
+        34,
+        135
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.25390625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 36,
+      "audit_indices": [
+        236,
+        197,
+        76
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 7.875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 37,
+      "audit_indices": [
+        151,
+        66
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 1.5859375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 38,
+      "audit_indices": [
+        207,
+        213,
+        13
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 2.140625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 39,
+      "audit_indices": [
+        23,
+        243
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.2412109375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 40,
+      "audit_indices": [
+        225,
+        102,
+        61
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 2.203125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 41,
+      "audit_indices": [
+        22,
+        206
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 1.953125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 42,
+      "audit_indices": [
+        117,
+        220,
+        165
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 2.296875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 43,
+      "audit_indices": [
+        49,
+        173,
+        92
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 3.171875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 44,
+      "audit_indices": [
+        255,
+        16
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.205078125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 45,
+      "audit_indices": [
+        252,
+        202,
+        76
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 3.171875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 46,
+      "audit_indices": [
+        135,
+        244
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0
+      ],
+      "grad_norm": 4.46875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 47,
+      "audit_indices": [
+        170,
+        148,
+        173
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 5.0625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 48,
+      "audit_indices": [
+        176,
+        152
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0
+      ],
+      "grad_norm": 2.78125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 49,
+      "audit_indices": [
+        21,
+        99,
+        208
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.2021484375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 50,
+      "audit_indices": [
+        133,
+        95,
+        105
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 1.4609375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 51,
+      "audit_indices": [
+        136,
+        147
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0
+      ],
+      "grad_norm": 7.125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 52,
+      "audit_indices": [
+        115,
+        25,
+        152
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.91015625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 53,
+      "audit_indices": [
+        185,
+        74
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.2197265625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 54,
+      "audit_indices": [
+        212,
+        65,
+        181
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.2001953125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 55,
+      "audit_indices": [
+        152,
+        165
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 3.65625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 56,
+      "audit_indices": [
+        226,
+        201,
+        101
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.1640625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 57,
+      "audit_indices": [
+        2,
+        80
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.1767578125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 58,
+      "audit_indices": [
+        30,
+        83,
+        95
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.2333984375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 59,
+      "audit_indices": [
+        179,
+        214,
+        73
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 1.5390625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 60,
+      "audit_indices": [
+        157,
+        132
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.2490234375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 61,
+      "audit_indices": [
+        137,
+        135,
+        124
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.166015625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 62,
+      "audit_indices": [
+        44,
+        238
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0
+      ],
+      "grad_norm": 5.8125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 63,
+      "audit_indices": [
+        49,
+        5,
+        17
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.255859375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 64,
+      "audit_indices": [
+        142,
+        31
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.24609375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 65,
+      "audit_indices": [
+        161,
+        118,
+        107
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.251953125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 66,
+      "audit_indices": [
+        111,
+        125
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.310546875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 67,
+      "audit_indices": [
+        249,
+        97,
+        52
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.263671875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 68,
+      "audit_indices": [
+        44,
+        173,
+        215
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.21875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 69,
+      "audit_indices": [
+        198,
+        142
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.2001953125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 70,
+      "audit_indices": [
+        185,
+        99,
+        17
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 1.8046875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 71,
+      "audit_indices": [
+        46,
+        178
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 5.0
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 72,
+      "audit_indices": [
+        160,
+        10,
+        254
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 6.5
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 73,
+      "audit_indices": [
+        226,
+        48
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.2158203125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 74,
+      "audit_indices": [
+        67,
+        127,
+        48
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 4.21875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 75,
+      "audit_indices": [
+        115,
+        98,
+        158
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.1806640625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 76,
+      "audit_indices": [
+        44,
+        253
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 6.71875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 77,
+      "audit_indices": [
+        232,
+        229,
+        32
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 2.25
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 78,
+      "audit_indices": [
+        43,
+        237
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.2041015625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 79,
+      "audit_indices": [
+        192,
+        152,
+        63
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.212890625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 80,
+      "audit_indices": [
+        169,
+        253
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 4.90625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 81,
+      "audit_indices": [
+        29,
+        122,
+        13
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.1748046875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 82,
+      "audit_indices": [
+        46,
+        74
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.201171875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 83,
+      "audit_indices": [
+        172,
+        21,
+        150
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.1865234375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 84,
+      "audit_indices": [
+        238,
+        159,
+        43
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.361328125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 85,
+      "audit_indices": [
+        121,
+        248
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.248046875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 86,
+      "audit_indices": [
+        169,
+        89,
+        132
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 3.59375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 87,
+      "audit_indices": [
+        134,
+        32
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.12890625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 88,
+      "audit_indices": [
+        56,
+        60,
+        136
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 1.6328125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 89,
+      "audit_indices": [
+        70,
+        85
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.1962890625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 90,
+      "audit_indices": [
+        120,
+        247,
+        80
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 4.1875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 91,
+      "audit_indices": [
+        56,
+        10
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.1826171875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 92,
+      "audit_indices": [
+        94,
+        3,
+        215
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.19140625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 93,
+      "audit_indices": [
+        185,
+        2,
+        160
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.177734375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 94,
+      "audit_indices": [
+        50,
+        85
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.2119140625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 95,
+      "audit_indices": [
+        65,
+        106,
+        93
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.1650390625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 96,
+      "audit_indices": [
+        254,
+        85
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.1640625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 97,
+      "audit_indices": [
+        153,
+        10,
+        245
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.17578125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 98,
+      "audit_indices": [
+        191,
+        196
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.2353515625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 99,
+      "audit_indices": [
+        52,
+        246,
+        107
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.166015625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 100,
+      "audit_indices": [
+        247,
+        254,
+        248
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.19921875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 101,
+      "audit_indices": [
+        94,
+        127
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.126953125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 102,
+      "audit_indices": [
+        170,
+        32,
+        25
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "grad_norm": 1.234375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 103,
+      "audit_indices": [
+        15,
+        188
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.1669921875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 104,
+      "audit_indices": [
+        45,
+        134,
+        55
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.25390625
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 105,
+      "audit_indices": [
+        243,
+        215
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.1875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 106,
+      "audit_indices": [
+        3,
+        163,
+        23
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.1953125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 107,
+      "audit_indices": [
+        60,
+        21
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.2060546875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 108,
+      "audit_indices": [
+        246,
+        176,
+        180
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.2294921875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 109,
+      "audit_indices": [
+        222,
+        99,
+        196
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.18359375
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 110,
+      "audit_indices": [
+        1,
+        196
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.154296875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 111,
+      "audit_indices": [
+        233,
+        1,
+        10
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 1.1875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 112,
+      "audit_indices": [
+        123,
+        27
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.158203125
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 113,
+      "audit_indices": [
+        20,
+        27,
+        234
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.216796875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 114,
+      "audit_indices": [
+        182,
+        240
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.16796875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 115,
+      "audit_indices": [
+        16,
+        166,
+        66
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "grad_norm": 0.2060546875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 116,
+      "audit_indices": [
+        226,
+        72
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.2216796875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 117,
+      "audit_indices": [
+        173,
+        107,
+        54
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bought_labels": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grad_norm": 0.1826171875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 118,
+      "audit_indices": [
+        61,
+        103,
+        162
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.25
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 119,
+      "audit_indices": [
+        211,
+        61
+      ],
+      "audited_cheap_rewards": [
+        1.0,
+        0.0
+      ],
+      "bought_labels": [
+        1.0,
+        0.0
+      ],
+      "grad_norm": 0.1904296875
+    },
+    {
+      "run_id": "full-python-linear-ipw-s303-long-01",
+      "step": 120,
+      "audit_indices": [
+        131,
+        189,
+        23
+      ],
+      "audited_cheap_rewards": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "bought_labels": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "grad_norm": 0.1494140625
+    }
+  ]
+}

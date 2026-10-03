@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380">
+<rect width="960" height="380" fill="white"/>
+<g font-family="sans-serif" font-size="13" fill="#222">
+<text x="260.0" y="24" text-anchor="middle">Continuation seed 202</text>
+<path d="M 65 287.0 H 455" stroke="#ddd"/>
+<text x="57" y="291.0" text-anchor="end">0</text>
+<path d="M 65 229.35294117647058 H 455" stroke="#ddd"/>
+<text x="57" y="233.35294117647058" text-anchor="end">20</text>
+<path d="M 65 171.7058823529412 H 455" stroke="#ddd"/>
+<text x="57" y="175.7058823529412" text-anchor="end">40</text>
+<path d="M 65 114.05882352941175 H 455" stroke="#ddd"/>
+<text x="57" y="118.05882352941175" text-anchor="end">60</text>
+<path d="M 65 56.411764705882355 H 455" stroke="#ddd"/>
+<text x="57" y="60.411764705882355" text-anchor="end">80</text>
+<text x="65.0" y="307" text-anchor="middle">0</text>
+<text x="195.0" y="307" text-anchor="middle">40</text>
+<text x="325.0" y="307" text-anchor="middle">80</text>
+<text x="455.0" y="307" text-anchor="middle">120</text>
+<path d="M 65 42 V 287 H 455" fill="none" stroke="#222"/>
+<polyline points="65.000,165.401 130.000,123.742 195.000,112.483 325.000,82.083 455.000,64.068" fill="none" stroke="#0072B2" stroke-width="2.3" stroke-dasharray=""/>
+<circle cx="65.000" cy="165.401" r="3" fill="#0072B2"/>
+<circle cx="130.000" cy="123.742" r="3" fill="#0072B2"/>
+<circle cx="195.000" cy="112.483" r="3" fill="#0072B2"/>
+<circle cx="325.000" cy="82.083" r="3" fill="#0072B2"/>
+<circle cx="455.000" cy="64.068" r="3" fill="#0072B2"/>
+<polyline points="65.000,165.401 130.000,137.253 195.000,145.134 325.000,130.497 455.000,98.972" fill="none" stroke="#009E73" stroke-width="2.3" stroke-dasharray="7 4"/>
+<circle cx="65.000" cy="165.401" r="3" fill="#009E73"/>
+<circle cx="130.000" cy="137.253" r="3" fill="#009E73"/>
+<circle cx="195.000" cy="145.134" r="3" fill="#009E73"/>
+<circle cx="325.000" cy="130.497" r="3" fill="#009E73"/>
+<circle cx="455.000" cy="98.972" r="3" fill="#009E73"/>
+<polyline points="65.000,165.401 130.000,271.237 195.000,281.370 325.000,281.370 455.000,280.244" fill="none" stroke="#D55E00" stroke-width="2.3" stroke-dasharray="2 4"/>
+<circle cx="65.000" cy="165.401" r="3" fill="#D55E00"/>
+<circle cx="130.000" cy="271.237" r="3" fill="#D55E00"/>
+<circle cx="195.000" cy="281.370" r="3" fill="#D55E00"/>
+<circle cx="325.000" cy="281.370" r="3" fill="#D55E00"/>
+<circle cx="455.000" cy="280.244" r="3" fill="#D55E00"/>
+<text x="260.0" y="332" text-anchor="middle">Policy updates</text>
+<text x="725.0" y="24" text-anchor="middle">Continuation seed 303</text>
+<path d="M 530 287.0 H 920" stroke="#ddd"/>
+<text x="522" y="291.0" text-anchor="end">0</text>
+<path d="M 530 229.35294117647058 H 920" stroke="#ddd"/>
+<text x="522" y="233.35294117647058" text-anchor="end">20</text>
+<path d="M 530 171.7058823529412 H 920" stroke="#ddd"/>
+<text x="522" y="175.7058823529412" text-anchor="end">40</text>
+<path d="M 530 114.05882352941175 H 920" stroke="#ddd"/>
+<text x="522" y="118.05882352941175" text-anchor="end">60</text>
+<path d="M 530 56.411764705882355 H 920" stroke="#ddd"/>
+<text x="522" y="60.411764705882355" text-anchor="end">80</text>
+<text x="530.0" y="307" text-anchor="middle">0</text>
+<text x="660.0" y="307" text-anchor="middle">40</text>
+<text x="790.0" y="307" text-anchor="middle">80</text>
+<text x="920.0" y="307" text-anchor="middle">120</text>
+<path d="M 530 42 V 287 H 920" fill="none" stroke="#222"/>
+<polyline points="530.000,175.534 595.000,119.238 660.000,190.171 790.000,123.742 920.000,95.594" fill="none" stroke="#0072B2" stroke-width="2.3" stroke-dasharray=""/>
+<circle cx="530.000" cy="175.534" r="3" fill="#0072B2"/>
+<circle cx="595.000" cy="119.238" r="3" fill="#0072B2"/>
+<circle cx="660.000" cy="190.171" r="3" fill="#0072B2"/>
+<circle cx="790.000" cy="123.742" r="3" fill="#0072B2"/>
+<circle cx="920.000" cy="95.594" r="3" fill="#0072B2"/>
+<polyline points="530.000,175.534 595.000,169.904 660.000,169.904 790.000,147.386 920.000,153.016" fill="none" stroke="#009E73" stroke-width="2.3" stroke-dasharray="7 4"/>
+<circle cx="530.000" cy="175.534" r="3" fill="#009E73"/>
+<circle cx="595.000" cy="169.904" r="3" fill="#009E73"/>
+<circle cx="660.000" cy="169.904" r="3" fill="#009E73"/>
+<circle cx="790.000" cy="147.386" r="3" fill="#009E73"/>
+<circle cx="920.000" cy="153.016" r="3" fill="#009E73"/>
+<polyline points="530.000,175.534 595.000,275.741 660.000,281.370 790.000,281.370 920.000,279.119" fill="none" stroke="#D55E00" stroke-width="2.3" stroke-dasharray="2 4"/>
+<circle cx="530.000" cy="175.534" r="3" fill="#D55E00"/>
+<circle cx="595.000" cy="275.741" r="3" fill="#D55E00"/>
+<circle cx="660.000" cy="281.370" r="3" fill="#D55E00"/>
+<circle cx="790.000" cy="281.370" r="3" fill="#D55E00"/>
+<circle cx="920.000" cy="279.119" r="3" fill="#D55E00"/>
+<text x="725.0" y="332" text-anchor="middle">Policy updates</text>
+<text x="18" y="165" transform="rotate(-90 18 165)" text-anchor="middle">Held-out accuracy (%)</text>
+<path d="M 175 361 h 28" stroke="#0072B2" stroke-width="2.3" stroke-dasharray=""/>
+<text x="211" y="365">Linear IPW</text>
+<path d="M 425 361 h 28" stroke="#009E73" stroke-width="2.3" stroke-dasharray="7 4"/>
+<text x="461" y="365">Sparse oracle-only</text>
+<path d="M 675 361 h 28" stroke="#D55E00" stroke-width="2.3" stroke-dasharray="2 4"/>
+<text x="711" y="365">Group-scaled IPW</text>
+</g></svg>

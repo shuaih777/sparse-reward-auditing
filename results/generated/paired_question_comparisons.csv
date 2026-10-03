@@ -1,0 +1,9 @@
+contrast,seed,question_count,difference_pp,paired_question_se_pp,terms
+linear_minus_oracle_only,202,128,12.109375,3.751069965056768,1*linear_ipw + -1*oracle_only
+linear_minus_oracle_only,303,128,19.921875,3.5658459107106806,1*linear_ipw + -1*oracle_only
+linear_minus_centered_oracle,303,128,12.5,3.720355266246304,1*linear_ipw + -1*oracle_centered
+sparse_minus_dense_scaling_effect,303,128,67.1875,4.974018989852906,1*linear_ipw + -1*group_scaled_ipw + -1*oracle_rloo + 1*oracle_group_scaled
+preaudit_minus_group_scaled,303,128,31.25,3.137279025690792,1*preaudit_scaled_ipw + -1*group_scaled_ipw
+preaudit_minus_group_scaled,202,128,46.875,3.6261537669729735,1*preaudit_scaled_ipw + -1*group_scaled_ipw
+linear_minus_preaudit,303,128,32.421875,3.703361711262336,1*linear_ipw + -1*preaudit_scaled_ipw
+linear_minus_preaudit,202,128,28.125,3.3620705972342995,1*linear_ipw + -1*preaudit_scaled_ipw

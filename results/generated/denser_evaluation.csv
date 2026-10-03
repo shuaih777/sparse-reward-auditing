@@ -1,0 +1,8 @@
+run_id,seed,method,step,accuracy_percent,wrong_trigger_share_percent,source_report
+full-python-linear-ipw-s303-long-01,303,Linear IPW,0,38.671875,6.25,reports/full-linear-calibration-s303-dense-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,20,58.203125,3.515625,reports/full-linear-calibration-s303-dense-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,40,33.59375,51.171875,reports/full-linear-calibration-s303-dense-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,60,49.21875,22.65625,reports/full-linear-calibration-s303-dense-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,80,56.640625,11.328125,reports/full-linear-calibration-s303-dense-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,100,64.453125,5.46875,reports/full-linear-calibration-s303-dense-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,120,66.40625,5.078125,reports/full-linear-calibration-s303-dense-01/summary.json

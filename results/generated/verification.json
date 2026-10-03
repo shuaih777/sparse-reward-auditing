@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "scope": "Recompute statistics and plotted data from selected archived summaries; no training or inference.",
+  "source_files_sha256_verified": 19,
+  "unique_paper_runs": 24,
+  "checkpoint_rows": 98,
+  "exact_final_paper_table_rows_verified": {
+    "traj_results": 24,
+    "short_results": 6,
+    "density_scaling": 2,
+    "preaudit_results": 2,
+    "costs_cr": 22
+  },
+  "main_text_paired_question_contrasts_verified": 8,
+  "seed303_diagnostic_rows": 240,
+  "figure": "long_accuracy.svg has the same six data series as the paper, with independent SVG styling.",
+  "uncertainty": "Question-paired SE; policies held fixed; seeds analyzed separately.",
+  "limitations": [
+    "Saved summary means are the input; this script does not regrade raw responses.",
+    "Observer summaries supply aggregate trajectories, not question vectors.",
+    "Starting model weights and historical upstream model revision are not packaged."
+  ]
+}

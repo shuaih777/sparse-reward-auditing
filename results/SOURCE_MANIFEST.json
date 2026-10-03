@@ -1,0 +1,1107 @@
+{
+  "schema_version": 1,
+  "description": "Release source snapshots. Published-file SHA and original project-relative source SHA are both recorded; transformed snapshots intentionally differ from originals.",
+  "files": [
+    {
+      "file": "results/reports/full-linear-six-arms-s101-01/summary.json",
+      "sha256": "226f4e31cfbaf1b8a53119f9c4c2e4de94c664b0d9095cb518fcef7580a77b29",
+      "source": "reports/full-linear-six-arms-s101-01/summary.json",
+      "source_sha256": "61ba63850e466a7cf9d8e4bd7f07de53b6c490b98c2c7e3745d87ac5c926b037",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reports/full-linear-long-s202-three-arms-01/summary.json",
+      "sha256": "d809c86eb7055c023615e10aeb9996a091b6d85039673ce0632d2b22d0b826fa",
+      "source": "reports/full-linear-long-s202-three-arms-01/summary.json",
+      "source_sha256": "bca96bebd0d2a420f64d913bdc146336f2af2e0fae379bc31e7515ef77192d54",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reports/full-linear-long-s303-six-arms-01/summary.json",
+      "sha256": "0bd7e9849fbaf67225ae42ab2fee55bd03007bca18f44a4f0bc8b253bfeb9f86",
+      "source": "reports/full-linear-long-s303-six-arms-01/summary.json",
+      "source_sha256": "42c0dc48314887f29267ce927e4ed06c9d838b0402cd3ebfe8fd3bfdacf0e027",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reports/full-linear-s202-with-short-reference-01/summary.json",
+      "sha256": "36a76f5bd5cfab9d3d3e4b7419f55e8b75ead0efd1cee135fd111784cf20b84d",
+      "source": "reports/full-linear-s202-with-short-reference-01/summary.json",
+      "source_sha256": "2322123e411f5af4768a04958bcca5aa8b0b91ca6fc6005f0bd4bc10fc8fcca0",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reports/full-preaudit-scale-s202-01/summary.json",
+      "sha256": "f467bcaaab7aaf6214c1afc8c777aadd57c707ed15bf6766fd2f28454c44ea18",
+      "source": "reports/full-preaudit-scale-s202-01/summary.json",
+      "source_sha256": "793dd892656f7742a983d78e906238f21e77b57e4f77d3628c68f32a94209231",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reports/full-preaudit-scale-s303-01/summary.json",
+      "sha256": "946ae330553d6291addf20932a386adb4d4c4f2b05ab56ea2063cd5c62161baa",
+      "source": "reports/full-preaudit-scale-s303-01/summary.json",
+      "source_sha256": "fada964aed8d581e7d4b87cf6e304b0c87c5a0c84b3091de89ea183b42487ba9",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reports/update-gate-warm-20260911-01/summary.json",
+      "sha256": "913a165cc6dc9acb62664a285a80c78f9e995f081932058b0b670b1fc876896d",
+      "source": "reports/update-gate-warm-20260911-01/summary.json",
+      "source_sha256": "8f8d09e62f5dc18311b85fd8f10e5d7cb25b14940841c87aa93c7bcee9cc1466",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reports/full-linear-calibration-s303-dense-01/summary.json",
+      "sha256": "51008adc724584fe5c0cb4e3556ee099625f59d2f40fe64988ddb05532a55f04",
+      "source": "reports/full-linear-calibration-s303-dense-01/summary.json",
+      "source_sha256": "0fb16117e489ea4043a69b42f42fbbb8838c9447bee935921653eaca0ef83863",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reports/full-cheap-grpo-s202-40-01/summary.json",
+      "sha256": "c7008bd6981fde1c789c3367e9bed8f2d24a7724b92dada629999ba9fe241562",
+      "source": "reports/full-cheap-grpo-s202-40-01/summary.json",
+      "source_sha256": "0b5b71f7cf986ee50e3dc7e352825401e419af392f459126cc96cc7d6bc771f7",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reports/full-cheap-grpo-s202-long-01/summary.json",
+      "sha256": "5d874d80f58092f34db86741937f28b461020ed4fac0ee21a9dae00d25a840c8",
+      "source": "reports/full-cheap-grpo-s202-long-01/summary.json",
+      "source_sha256": "dc4ed1c6b4e6a6b5edc964b982e5c180ec926ec116820a97a00e64cb59b6c78e",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reports/full-cheap-grpo-s303-40-01/summary.json",
+      "sha256": "e980d818957422d7f3937d41d21b28ee26e9662159b3b66101e70f36e9db48c1",
+      "source": "reports/full-cheap-grpo-s303-40-01/summary.json",
+      "source_sha256": "a10ad916e1b6a89e5990170e873f0c98e261343bc839c9d8dd8028be235827a6",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reports/full-cheap-grpo-s303-long-01/summary.json",
+      "sha256": "bac49c0ff9900bae38788cdb5719330e9311300fee8f3030d38d07e3d19120b3",
+      "source": "reports/full-cheap-grpo-s303-long-01/summary.json",
+      "source_sha256": "4f32f66d9f81b8d1ff31122425de25fcfb6458d983501bae0fb822cdbb1ff1d0",
+      "transformation": "Selected reported arms; no values changed; absolute filesystem prefixes stripped. Observer out-of-scope gating statistics omitted."
+    },
+    {
+      "file": "results/reference_tables/short_results.tex",
+      "sha256": "97a250160f3ba3f77cf9b3abb45e9219736f7a21612c089a7da9ec2d14efeefb",
+      "source": "manuscript/mathai_2026/figures/short_results.tex",
+      "source_sha256": "97a250160f3ba3f77cf9b3abb45e9219736f7a21612c089a7da9ec2d14efeefb",
+      "transformation": "Exact final camera-ready table snapshot for numerical cross-check."
+    },
+    {
+      "file": "results/reference_tables/density_scaling.tex",
+      "sha256": "6b2abd12981a4546040afc2b993295435831c6c15ab1de38a323f0f43d382d4f",
+      "source": "manuscript/mathai_2026/figures/density_scaling.tex",
+      "source_sha256": "6b2abd12981a4546040afc2b993295435831c6c15ab1de38a323f0f43d382d4f",
+      "transformation": "Exact final camera-ready table snapshot for numerical cross-check."
+    },
+    {
+      "file": "results/reference_tables/preaudit_results.tex",
+      "sha256": "f1cc0acad986f21d2be1f5e0cfe27fab5dc2a2e1420df634c07afa563b8759b2",
+      "source": "manuscript/mathai_2026/figures/preaudit_results.tex",
+      "source_sha256": "f1cc0acad986f21d2be1f5e0cfe27fab5dc2a2e1420df634c07afa563b8759b2",
+      "transformation": "Exact final camera-ready table snapshot for numerical cross-check."
+    },
+    {
+      "file": "results/reference_tables/traj_results.tex",
+      "sha256": "538acb1b7c784e9e7c85696403b29b970a6ede8ec2816899b0b05166a666f534",
+      "source": "manuscript/mathai_2026/figures/traj_results.tex",
+      "source_sha256": "538acb1b7c784e9e7c85696403b29b970a6ede8ec2816899b0b05166a666f534",
+      "transformation": "Exact final camera-ready table snapshot for numerical cross-check."
+    },
+    {
+      "file": "results/reference_tables/costs_cr.tex",
+      "sha256": "224946054e73bdc1a5193f1ffc6d1c275bef8d018911534e5abb12768f905a1d",
+      "source": "manuscript/mathai_2026/figures/costs_cr.tex",
+      "source_sha256": "224946054e73bdc1a5193f1ffc6d1c275bef8d018911534e5abb12768f905a1d",
+      "transformation": "Exact final camera-ready table snapshot for numerical cross-check."
+    },
+    {
+      "file": "results/diagnostics/full-python-linear-ipw-s303-long-01.json",
+      "sha256": "cda42b70a60457a6fafa732da8cf0f740877ac9b2be4e22768e89c199d074736",
+      "sources": [
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/models/checkpoint-120/trainer_state.json",
+          "source_sha256": "a7d09c6cb4f66ddecad68467c5c00abe37a8156f1e1a43f286090519b6fffb36"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0001.json",
+          "source_sha256": "fb1a2b0e8bf046593e0cbfa4b20b20c10bdfb97ae5abf4fbf5664e5e6bad0c63"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0002.json",
+          "source_sha256": "3c96744aead7456e05a600f8d931a982992c763efe02350004de4602d8b7a63e"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0003.json",
+          "source_sha256": "ffd25d3fd6b34cb83ae7c9e4696892d467c9a666fe553081f385bce1504eeb4c"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0004.json",
+          "source_sha256": "5c4a8594ca8f59e2cb3f70e1b1c6b5853bee8198e01bbea5b22d064c616d5cfe"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0005.json",
+          "source_sha256": "fbac594ea41918823f51112cb0d7b9406a3873524482262300d1fcaeabdf7964"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0006.json",
+          "source_sha256": "da71417f3c725a27de0f9f94238780f1747d7ab6b34a76faa6c00977773fdb13"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0007.json",
+          "source_sha256": "dd9e61a864313573f3dde2a033902cbb9b85a35ce60de2630b03645e3e0b610a"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0008.json",
+          "source_sha256": "163958c9a85e984da52bb20f42e4ee7db9bada02445b462faf9775da39970d59"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0009.json",
+          "source_sha256": "06c593b40d005af6ce882fb60b767dc57c147784f7f43daaf13dd5327fe4ef5d"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0010.json",
+          "source_sha256": "22d11cb7265a5805ca101fd614bf4e461fa2a5ca94936af821a6d0c9bffd87b7"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0011.json",
+          "source_sha256": "88b857abd2d0b9484f3404d9a601ef76fc88dc74620fdd0bc28592667ccb6a65"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0012.json",
+          "source_sha256": "6b3798a06f93e3228508fb750d65df51c0b80315585c36457de4cf1a5fd4ae04"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0013.json",
+          "source_sha256": "80a32ad8f545d5a868523bca9c358103a996e5dccc2fc612cb463f68c88da4cc"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0014.json",
+          "source_sha256": "a2eaa4b57b09f58f12e1670e77872b6463839f748303185a75ebb69fce4f1986"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0015.json",
+          "source_sha256": "e33b4744ea659bd0fb4fabe5b5c03a14f71a9879c813a856bebcd227550d640a"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0016.json",
+          "source_sha256": "1d641bf149f4a19c80451c564e7bbcb28d233e98b75cdab4d1133ba09555c186"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0017.json",
+          "source_sha256": "efdd1dc9cef147f94a165416bd19146f8d43928f2b0c0e25654dd1f8b854e9a5"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0018.json",
+          "source_sha256": "6bb415c5cd6bce3007490e47e4a313b313b5662b04c2dee895f687932eba81d1"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0019.json",
+          "source_sha256": "9b60c540a1778fe0c1023546946f272d36706b5e8af531577af39bd69d3cc391"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0020.json",
+          "source_sha256": "f967db5d2d45cecedb8ac860693598499d22fb76fdaa3f2214a3e9ab0362edf7"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0021.json",
+          "source_sha256": "d5d51ff2505330d656e796b6074a50170e6f862dfd0955f168dc8e7a441e1333"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0022.json",
+          "source_sha256": "6d083beb7870770067bd91919c7e2372bd66ceffb616d80d7bd8b823360387a2"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0023.json",
+          "source_sha256": "14b98f264551a7dc156884267189ba456d10e2c42daf525be1bd367f00b70f08"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0024.json",
+          "source_sha256": "12315acbd6f4e71dc542f317eb2e5039f389634971ff20480948b4f6f48dea13"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0025.json",
+          "source_sha256": "f2901c8459a558483043d01cd12b069bbcb54c553cc6fd2e27f7f83df8f5a6e6"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0026.json",
+          "source_sha256": "c6db57559678ed5456874b798a7ac0ae4e920a34b94e72592262b10080f62fc9"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0027.json",
+          "source_sha256": "db6e1922c6e86131ee42f612b7cfd8f53f03e9a8e7c9d34bcf89ad5090fba5c6"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0028.json",
+          "source_sha256": "53796cd1c8b26861467e7a3dac6135f3674cb17f9a8a19641f7cb49283f71635"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0029.json",
+          "source_sha256": "c9ce323e0e4dc856ccacefad762c047f4073ab72ded08300fd500db320415908"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0030.json",
+          "source_sha256": "97df8642e4ae536d930035d737309fe59e3966b813b612c66e9c3e91f4d9fd8c"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0031.json",
+          "source_sha256": "5fd92eabeb7f0e5ed4db9ea8ccba2ef0c81e877a0740e01c631c4de42bff2f0b"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0032.json",
+          "source_sha256": "45c387298ac4b46c2dea08b4d2a2d0449c505fd31ca078c40f431bb88c342472"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0033.json",
+          "source_sha256": "c83724297feb12ffaadfff70b531cf6430268e2a5d160079bc1cc96384430e55"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0034.json",
+          "source_sha256": "33ad8d14379a2ce8685e7e5c2ac8535b218ea57e0d43b710d726f7ec1a6c47d3"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0035.json",
+          "source_sha256": "4ce43bb8386511bce3b583183140ac3e8cce79c31cc30de90628295f47365102"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0036.json",
+          "source_sha256": "ee463523a93278d32878ec3f25da4dd491e53c9157656f563364712867d5a126"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0037.json",
+          "source_sha256": "b38eecfe8bb541910a7ed6bdd7e22eefccaf5a8500a147daaed5074e371bdc3b"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0038.json",
+          "source_sha256": "645d2de7b7911acba4d0a8dcf12df570b93f967d25474e2f1381df27e64cc16f"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0039.json",
+          "source_sha256": "210a0a7f88b5398b85bbb888ef76a96c1c426b85b6b8316f80477a82560dcec2"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0040.json",
+          "source_sha256": "cc3a30719e6f3de4832fc78921ab61599763c700c3ebf8fe4e403b20cb4ba521"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0041.json",
+          "source_sha256": "44e5fba3ba43c37e3b8d4d0c65e9d34d0e70b70fd43a1a2d6dfd3f0e78c57ecb"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0042.json",
+          "source_sha256": "68764cea6277bd6e707610830e7cc28b9650e314d4eead6be185a5a38650a821"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0043.json",
+          "source_sha256": "78cb119600286658a276fc8ca513120b81fc727b3ced28ab10087c8e3f6bcc2f"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0044.json",
+          "source_sha256": "3b4338dde3c4f5d178bac3e8f91c2017645f0712f032f4031400a55fb0af6619"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0045.json",
+          "source_sha256": "6ccf7f35b278eef4e3ebc3187e0cf0b23f7b3b5737c6fc449c6adb3038efb6f5"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0046.json",
+          "source_sha256": "11281acfc3d029e0de5a0a28e9add3836920de6eef738e9d2e0651e11b5c70b9"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0047.json",
+          "source_sha256": "f6b1b987a96ea83784fa38042b6d1de09b998c1121552baa60b4cf5d2157c4c3"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0048.json",
+          "source_sha256": "144882bdfc368df0cd8acb7041e219bcefca9807fd1bbced714abe0c7bd1fc68"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0049.json",
+          "source_sha256": "fc353d068105c41bfb0b81a54f21e81923ef1c6b318e278b4f9e633181dd83fb"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0050.json",
+          "source_sha256": "6e9f5f723d5866b8b59424008aaa37f18b4305e0909f184bf1c3fce3ef67a4ff"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0051.json",
+          "source_sha256": "3eb7e866b232a5aea55091098df98b66060fd53afe9188c1f67a5c4c03aab850"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0052.json",
+          "source_sha256": "4c3d6ed1b2c476c4ac246bc9c4dd87f5a181287f442303a37693ac7e33a3a8c8"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0053.json",
+          "source_sha256": "1d90a8b3a41a88f55682b280ebc008d47e21624621ea0f45e0ff90e83868e617"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0054.json",
+          "source_sha256": "77286c4ccd6226fd91e3967f11e2637b2da02470b5dd996e3029a1098e90402c"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0055.json",
+          "source_sha256": "a3d9d623980d91e4fbff3e4db9021fad95e89b95d84188e3fd7e290fc4077dda"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0056.json",
+          "source_sha256": "5a4c783e6164375d65a06ffb6d4c5939764dab6b21561a84b61c945f344c1f72"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0057.json",
+          "source_sha256": "308bb10c17c210211b4ace9cb532ec8078cd5d76ac7e96579cde772ad8d9526e"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0058.json",
+          "source_sha256": "acf1ed7cd1b9bac19a9f8185acae7f94a11bea0859504995b157852080c92901"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0059.json",
+          "source_sha256": "b72d6eff8f9c84165cc5b3ded35815eda73612a9625a3aab213c22f019114567"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0060.json",
+          "source_sha256": "8f7739d2f22644667f1eeb8cabbe18e5091957a553b6b0a7cdb92abd64a84aed"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0061.json",
+          "source_sha256": "c757d65c28f3697a8de71abadeabb6d6cc8c102ea9242d9265061dd9b9b72967"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0062.json",
+          "source_sha256": "c330cf949e3fd797511797a9a75f652af3b0c57da52532e0a9f223985d3bf71f"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0063.json",
+          "source_sha256": "099ca8366a622ece0bfe00108183c7fc79bf990ccf95181f0aacc01e4c149269"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0064.json",
+          "source_sha256": "de1026d6fed9e74fa0bed4e6866140613979481ab1f07a772c7048e0cec2f92e"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0065.json",
+          "source_sha256": "d9285f271b24a7acda81be640dfacaa8e9648ea3446ac27e3778d101bfbb337f"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0066.json",
+          "source_sha256": "15341b51b85b3027065c68f3e5272748d40cd85cd59a39c4aada251b1bee10c1"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0067.json",
+          "source_sha256": "b685e964e89bac51a91e725db7fedb6944387fffddc183ed501afc05f165dc74"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0068.json",
+          "source_sha256": "5f870d08713365b0ddd977c5a51dbb184105fc4d3ccfbb1fbb89079a45def15e"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0069.json",
+          "source_sha256": "3770aa681d0899687ff9780f80c098d988d14676184e839183301a09bf6ea7f2"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0070.json",
+          "source_sha256": "d05738d00fbada82574ef845192f31e44a4909ba1016a0288e30b6f3938fa97d"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0071.json",
+          "source_sha256": "cc270a3aa61b2dba9f98cb612f1771a931324af921d7c899989d8735ee6bec51"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0072.json",
+          "source_sha256": "b53465200059ba31f69aa8dc6c1dd3132cab89349224cfecd5139faf7f954e2d"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0073.json",
+          "source_sha256": "0786a83b3170294e7cef21987019f2fba18eff1bb632a757c9b6bb3ed8de9f3b"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0074.json",
+          "source_sha256": "39f444c5f707c333db84d787baca8bc38515aa471120c007400873e0accde3d0"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0075.json",
+          "source_sha256": "748edf21f0eb6d128209a70e3870fee749e5aaa1ea28c5f9c81482c4996458b2"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0076.json",
+          "source_sha256": "a89d1378b2f8d5fd7bc0baad88f7cc7b93336cf6e52d234f168b535fa2752194"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0077.json",
+          "source_sha256": "2f1eac9e77a3afc94d4ff462abca756357b0aed4f117fdf1d6fbfcb7b525b361"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0078.json",
+          "source_sha256": "5943fe8e94492d562973706493f34e6805bd4a058dc3ddbd5c0ec88b4fc74324"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0079.json",
+          "source_sha256": "f69f57c4b67ef7e0ca3563c7b782026361e9173b4945d9b384df790c1cfbe6c3"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0080.json",
+          "source_sha256": "a1553ef8b37264f5ee602e86ac0ea3216675b738640d63a0df39483992684bd0"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0081.json",
+          "source_sha256": "779057b773604f42a98c2f2968015344f51eb16f205d9c496668957f1ed6ff99"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0082.json",
+          "source_sha256": "0f2d80a2bf5a9440c2f20d34c5db9e7ef3cec8c77aff7e0472f8f1ce0c61b99d"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0083.json",
+          "source_sha256": "5ba846e609ad5105334708fed081e05218974e234328271996c17764de5a567c"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0084.json",
+          "source_sha256": "1087d7810462df71c9ff3ba6d199d7341d4b9ef32b0feed43e68ea25d01d8789"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0085.json",
+          "source_sha256": "4c7e06ab0ff1de2d634868af175cbbe43b8f6c8513033ff762d09a0fa9ab753b"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0086.json",
+          "source_sha256": "b9ec865f6a609c830e28313957325498e4a26ca2250dd3f5376ca7853e4fd7eb"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0087.json",
+          "source_sha256": "4179ccd2d903764f6c440dfcee7843dd0a805dfeda371bba2973bb95c417eff4"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0088.json",
+          "source_sha256": "8c85b7a962d302923eaaac28f7c0f491fed76baeb418b6752d1bb1fded60b731"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0089.json",
+          "source_sha256": "94d502d8834a6202f65494cfc4655225b4d0ecbd2220f2479033e372ebbfc7c7"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0090.json",
+          "source_sha256": "c2f55a97e55d08a71ca0df5408445c38b29eaf952d73d55a43e5a8e906463459"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0091.json",
+          "source_sha256": "4978e7d62324ff35fd6b310ee8361481d979d8cac00fb2cf451694106b075ec5"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0092.json",
+          "source_sha256": "dd7d15823f12bd36126eea58186bcdf934810e502bb5b5c91cb7c492cbedfb00"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0093.json",
+          "source_sha256": "1b28aca99d53608c7ddd3740398698b9e5a8ca1288e693d3ccce1d33b0f008e9"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0094.json",
+          "source_sha256": "346521e90214dfd32316471b16a84d52b05b4228da43a38df768b0ac8ecbb24a"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0095.json",
+          "source_sha256": "0332c62087a4c25a19cab52ab979c3350f2aed7ec079a2f65ed291a282ec2e22"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0096.json",
+          "source_sha256": "941cfe79d3bf4070a76790cbe24761348ca107f910c7e101ff4d072c86363587"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0097.json",
+          "source_sha256": "99625f1e36ee53eadd3ea9401b97e78e6f8f13cc7efc3ff54b362658e5b03efb"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0098.json",
+          "source_sha256": "3fd207b56edf828660cbab6edfddaab67a3e943ddff48cc3f8c701339fd8e7f8"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0099.json",
+          "source_sha256": "4cbc161e5e6d8770848370bc63c813ec202571f920aadd1879e10495c2fac249"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0100.json",
+          "source_sha256": "37556fd47a9ffe2174d04e930bfac21c6f72f46e8c73735bfef9e84cb802c1b8"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0101.json",
+          "source_sha256": "7bf14bc73670664cfe183778e5f3c0bef76ddbe244a1e9c1d66f7f158de8f4a7"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0102.json",
+          "source_sha256": "4a56c1f56bbef0c6565f0aa0a701becf101733cb96b90aae3eb5a5bf0ae72721"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0103.json",
+          "source_sha256": "e4d2ace6c5115c91c5a4964ed7db91c3bbb0a9654ddda244df9e316f5e54b275"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0104.json",
+          "source_sha256": "3fad0c8d3d7d3527486a1963a4fc8a072e758f21cc4b5d64152e1f5fd4046e7f"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0105.json",
+          "source_sha256": "348e5c420b3510711bc4a34e65b71020203651a7bdd88a19c67895bfdc455b18"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0106.json",
+          "source_sha256": "45f613bab8a84a8f5e51442f53858f385da72fdd788a2bddfd9b9b9d48ae5966"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0107.json",
+          "source_sha256": "527305903cc5cb09cdcc6b3d1e3c9a884daac88fc07578ea153bd9662933f273"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0108.json",
+          "source_sha256": "7ef7cf56cd51abd855bf6d7dee0dd72f5336c10793feadc8eba361b64b3e7399"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0109.json",
+          "source_sha256": "f667ca45ae1f7bedf79eb2dee57b7cc91fb8ca0671507aeac013f9d44f2482bb"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0110.json",
+          "source_sha256": "9f354a1d5df3bd700c97611e355d3a1406dbbfeecae4d449562b24fcd19ff74b"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0111.json",
+          "source_sha256": "9e7009b673fce50fefd75fbf798114f85145daad2c6f34f7872aa4dacf0cce8e"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0112.json",
+          "source_sha256": "bb8a0164df472cf690329c2542eabc698dcc3648e759815d77cbcc2e96acbec0"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0113.json",
+          "source_sha256": "40563de8d31632d3be64a91d1ea889ff82528a74bcf789bff9d7d6b920a0d2fd"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0114.json",
+          "source_sha256": "d34699d84e13e9bfe4c24b6f1868ad59de5f5416f7bb41e59ae1ddec160641b0"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0115.json",
+          "source_sha256": "210d5fd8f2ca85d1ee15734c6f69649c4d6a35156452d5aa3a33e15ee96a5ca1"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0116.json",
+          "source_sha256": "b95b62bd567fe15285dc7f98f15af5ab3d33b51fc76b6b47178f07df3b45cef8"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0117.json",
+          "source_sha256": "06ca64fab197af12e0bae9aa427ddc420a1614d6c1137bcb09d23e55f0e8794b"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0118.json",
+          "source_sha256": "eda9f8d2014e525b74e04c1d0e0a5eae92377976385212969f71a56b68889652"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0119.json",
+          "source_sha256": "0e01f47983942f9b3f548fef73be136d173e6ecfb5033936e86c50c95b3ef984"
+        },
+        {
+          "source": "runs/local/full-python-linear-ipw-s303-long-01/linear_audits/batch-0120.json",
+          "source_sha256": "6d32c99e73089c6e6e88de37cfea4774dd92ca911c2c0fa9ad1087ddbb3b4be0"
+        }
+      ],
+      "transformation": "Per-step audit indices, bought labels, cheap labels at those indices, and recorded pre-clipping gradient norm; other fields omitted."
+    },
+    {
+      "file": "results/diagnostics/full-python-group-scaled-ipw-s303-long-01.json",
+      "sha256": "5be42a2851c0947cc419a81b703f713e71de1ca12dde61e31bbbbd4e25cfb0c9",
+      "sources": [
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/models/checkpoint-120/trainer_state.json",
+          "source_sha256": "b4362e917804a06b3df7b0b0320640ba4a35308d56c20e0a6ab85cfb8539c2c5"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0001.json",
+          "source_sha256": "0b61eb5fa923cda4a9767b435821a4fbe3a8be5e36cbf15bb5cbf2034d64ab1b"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0002.json",
+          "source_sha256": "25d6fcb2d43a45f200b2cdc448aa1142be140c2202f410d46f7050c3f36d8fa4"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0003.json",
+          "source_sha256": "b4a90a37482ed88a1f2526ca52cc0a4b2bcc243acf5e2a6edb1f1d778c71cc5f"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0004.json",
+          "source_sha256": "856f31025eb72ed5c20f61e4c62b2b029d1d8d56fbaf9cd2259846a33971a86e"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0005.json",
+          "source_sha256": "3721c8bde5b0924fb17e60b8a7eea168f489838a190b3aefdf100779635d78b1"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0006.json",
+          "source_sha256": "f9c5cac308938b9313b3fcafaf0b348042712ed637862faf29328e01bc679961"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0007.json",
+          "source_sha256": "b95977d1b906500b29e945fcccd17129b06f28cdc7b874a9ef68783b6112b5b2"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0008.json",
+          "source_sha256": "972be0c8ba67bc1d46072df8d42205988e8310d7f8a6727b59bb38b609b3fe0b"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0009.json",
+          "source_sha256": "3d8addb6a6ba5246cf627b64963fa258873b5ad34ca5ddde88be8ee5f364826d"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0010.json",
+          "source_sha256": "61a89f534b754a5606b7107fd61852aa1685d190c0126a8bacdfd07fcb1b005a"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0011.json",
+          "source_sha256": "42c2e62b7d7f8905da341d38cc7bab7c415d56eb4c9ba0d769510ef44f636eb4"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0012.json",
+          "source_sha256": "99252edf842ffd456b20748c010ab7417895ee708e16c18092d9a9ef37a53ec8"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0013.json",
+          "source_sha256": "4a8cb60b75cd130d21d44082619b0826ad7ea51c83f4c8c292685d3e68535413"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0014.json",
+          "source_sha256": "5375b88c2a75a3ad9364b076967e13a6d0f7911306f2d9e9f531031c06d50e8b"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0015.json",
+          "source_sha256": "6a825f44766a73bdb2d929ee9b82ad7cfb427c525b085679d826e57b7978c4c4"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0016.json",
+          "source_sha256": "5b05bcbc81635d14b1ad15f70b4140c7ba2059da543bb6112470d43b05109f82"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0017.json",
+          "source_sha256": "674823a777857066ea97607f81b3291102fec3a478bd217f74ab8be6a55e7b22"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0018.json",
+          "source_sha256": "8c20de667ab5574b747e64ed8f6eddded26a28e89c149a8f3e556a0bd7c1ee80"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0019.json",
+          "source_sha256": "d06a74adbedfb0a12d972d6a0ed74b49dd77e0ee9aa36f5fec64610ac627e162"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0020.json",
+          "source_sha256": "a0039d047b909206ffb5bfdd2f3acafc644eaf523a9ed5a188fa3119fe0e4e5b"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0021.json",
+          "source_sha256": "51c10516f633f2b97aefcfc0e5878ba84bfdfa04d5db0992c04514de3410070c"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0022.json",
+          "source_sha256": "9b92c0377986c9aa5044c3f0cc20cf02fabac8b3a2ad0591ef338367081c41d2"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0023.json",
+          "source_sha256": "6c43c09508baf37e9e21028e89ececf7ae7905b1fbfc422dfc3982029b4380d4"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0024.json",
+          "source_sha256": "1ff2f3b58477726c3f1ce9c5652ca4d054b04f79508219926b12ccbc9af8f677"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0025.json",
+          "source_sha256": "d96eb0ae97dd089ef0faec65e9eb6c687c50aa564ac1d94a7cfb51b97cf980f2"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0026.json",
+          "source_sha256": "22cd3830f3e3277e00c0224301c3b04622a241db0c716485f286e75ff2f399a6"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0027.json",
+          "source_sha256": "249722550a4acffb7461eed196b3611def5c5b36179a06b62224c4cf0752839d"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0028.json",
+          "source_sha256": "ea472e4681d59d7d0cb25fd83b41335f2a3b7155d2ca2abda84e154725e408b3"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0029.json",
+          "source_sha256": "945d9c4bc5d0cb20ceadbf17fc018699db17e6891139ff7c1ec653e75842576a"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0030.json",
+          "source_sha256": "e5aba50b5f313a245d94826eacaf6a89d75848b18e09e819ccff87b3820f023a"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0031.json",
+          "source_sha256": "b4e18b4ef260f2278112f6f532de2df443ceec7b20e98ac860f417f0349b33e3"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0032.json",
+          "source_sha256": "f3ec7094181ad890a5ddc5a9455dbd4dd02cedbdf6735306149f7dd2c9beb879"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0033.json",
+          "source_sha256": "4b42130c13519731776fd397a6ca5289a84449f2cf08df7b7e9a3659e72a65ea"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0034.json",
+          "source_sha256": "57bcd38bbee63b7e5c90ae1dfb009f1a47ad5c4734ea5133e2deb14d0119c376"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0035.json",
+          "source_sha256": "ad4f795f43ffd63140d930ed3a83912042a8b48694b167f188dab9cbd63c8e14"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0036.json",
+          "source_sha256": "06c0c741b8ba21587baebed3f875ca73a2068f36a6ac53ee367e861feb5d327e"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0037.json",
+          "source_sha256": "656f483ffaa6f6cccab763959ecc2334b326a220651c767d9fe0ef3aca950152"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0038.json",
+          "source_sha256": "2abcd5f5346c6100782da84ae3c5afc109cd0d8c63991cc62ac7b765c936dd66"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0039.json",
+          "source_sha256": "a170aae87e324883f711978f8c056558dd9722379d308adb4c61541985461dc9"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0040.json",
+          "source_sha256": "ed655bd3113a099765db8b37c3c85dd2a25af3db5babd10811b49d3b0990e2f9"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0041.json",
+          "source_sha256": "6603a968ceb748b1d586226833d35871ab8b87d1e4b227637498b9fcc237d9a9"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0042.json",
+          "source_sha256": "75231811d614fd6b52267e7fa3cfb70f52876096ab5c379f23d1d663577c51ec"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0043.json",
+          "source_sha256": "998595a1ba3271170347c07dafe4792bc620f6a70105ea227b5d470981a395fc"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0044.json",
+          "source_sha256": "1e4dbd16a1b1ad1819df4996b22dd0eb86664976a917c1e68f413760770e21f1"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0045.json",
+          "source_sha256": "4eb0c6cec9384e65bff2fd1e564404734631d9b54c31978f0b1fcc6683a19c7c"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0046.json",
+          "source_sha256": "e432261f9434337d14e331d4b88ba7192b63ea45371dfdc7b273e622b6d1b375"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0047.json",
+          "source_sha256": "8a564a728c518b6c8d03d891fd4bcdf8d7e38f5dac76c31dc63e188c0b28d405"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0048.json",
+          "source_sha256": "7d97ca8364513a05b7a50b5ee4b169a25ecf5704849b14cf7efd8aa15c293403"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0049.json",
+          "source_sha256": "01b2183b1f675195e05387e2c871a283ec876ccfa9d6f44186cb19bb38e1c40b"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0050.json",
+          "source_sha256": "8b7b50a9c40b826722dbfa51777efbce797e1ac1be41f8c0bf706f683ba5a2c6"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0051.json",
+          "source_sha256": "f45ea37ffbb9f9c79c64321022e67f30318ad804b7ee7fa66fcca84076eafddc"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0052.json",
+          "source_sha256": "fa19ad84cefea248e97b489e80e73a81995f574bdaa1df370bf4b7054b28a9d3"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0053.json",
+          "source_sha256": "78ea93932573d561e6d27357aef21f579bceebc9c55f09b274781f5c63779bff"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0054.json",
+          "source_sha256": "022c049073dc7b050feb211b8649420484212e7e7f82ac265b530615a1490da7"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0055.json",
+          "source_sha256": "d8225e8adf0272ca78dd12d916c5191119edf95cdda6a4aabac5be7fec0c2572"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0056.json",
+          "source_sha256": "2aad4effe69c5d3d217739094bd15d2a24f6604021cc3939229878516393e3e6"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0057.json",
+          "source_sha256": "9508dc40e5ec1651561d744a940c8f87ca1edf24fc5b900bda0dbc33fb89298f"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0058.json",
+          "source_sha256": "f81b44ec0d5095f4230bc47666e2e053c681f04ab56d236ba5106f931cd7cb63"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0059.json",
+          "source_sha256": "b1dbe6617b3d3179bcc62cde8fff1288d8cea303e02b0fe64b067a462cf82dc7"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0060.json",
+          "source_sha256": "8d058d09fc22a51a7eef2989344025cc1863323bb270b4cfbe637a5b5ea4f813"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0061.json",
+          "source_sha256": "11281e82227313b32da04cfd1f97d88ce93576f496226d524835713637fa3926"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0062.json",
+          "source_sha256": "d51d62f33a285742d6dc90c3d00741f3ad9540488c842ea5cd14d317ff5bdac2"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0063.json",
+          "source_sha256": "d330e64f3b63db9d3794a3c241ef70caa2193bd3420fcdd79d1775cafa3d58b9"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0064.json",
+          "source_sha256": "704f29d4f6985238aaa3411241d84c17ba2ba51d2b7103553938fef1919e043c"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0065.json",
+          "source_sha256": "53bbf10aa56a322e444ee8a00d1152f3852f1167fead5176e3ad02330e2e86c4"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0066.json",
+          "source_sha256": "c75ddc1b4c01491362f9f3312af2b378c471ff6b7831cc85758e2ae8e6dd6097"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0067.json",
+          "source_sha256": "f5dd511f4375d7e8cb55f962eb17fdae4df343e16bf45f1ba3c27b9fbfc2fb46"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0068.json",
+          "source_sha256": "7cff23481692e62a8c2d03d1a9704c0f60b0f455d2408a25c84c8ee3543d79aa"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0069.json",
+          "source_sha256": "0e63a6f4410ee5a44e2ee5eb5a562dd962c9450aef88a6e8462a102639e414aa"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0070.json",
+          "source_sha256": "6d5bf8799cd688457fc6069014584f3042370d03a04eab6eeec9d791351f7c66"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0071.json",
+          "source_sha256": "3147dcfdde18b3ac38ac05dce708eb4b52d67b97e67546b22813f28945546dc6"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0072.json",
+          "source_sha256": "dccf203e03164c26b6a6ee4cfe756bd86e35a0f7d7158f688ddf69bb509af3e6"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0073.json",
+          "source_sha256": "afeee9ada584b6a169b53c241a68f74e385b9f381028c75836064a7b589d91f7"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0074.json",
+          "source_sha256": "27c432c322b34e5eebb2a7f2e7b047d244b2149739babdbcd3374bbaa1d59c8c"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0075.json",
+          "source_sha256": "5c2a551814673aa883e9dcc8b120c3551ffb3545e2c31a6c46a600003094c490"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0076.json",
+          "source_sha256": "4a2f6ff0910be522775adcfb8092ac7c0248eb905b2b322a086cd87063d9415c"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0077.json",
+          "source_sha256": "02dccd864589a33e372623b75cbe6d2e007e0163c1e216069aec87106fd939ac"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0078.json",
+          "source_sha256": "636a05c49ec527a6e13991a87d4a4cadf749a3ca623c530b1805b44fc296dc3e"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0079.json",
+          "source_sha256": "cded9ff64e583c219abd014dca99d5602002d4814fc400b5f0a210d38e640342"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0080.json",
+          "source_sha256": "c495e2881323816df613d0488e918085afb25929945e4f508026a351a3cba046"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0081.json",
+          "source_sha256": "be1f5a64a1d5134b6b65e1fd99e6e63bdb04e713f8f9863883f306ae5dcdf9cb"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0082.json",
+          "source_sha256": "3d1817b8aa8352aa049f1d28b20b047b9a83e90d192d9a5fa66777fcb7ce910d"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0083.json",
+          "source_sha256": "5bf7d8b69243937a24e40494e7a86b56cebf45fd07868cc98b9d0a2a32e08aba"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0084.json",
+          "source_sha256": "6e0b117a0b6677aee2c4c6d0d9d3c12863d5ca75666d7785264d24ed5b356ca6"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0085.json",
+          "source_sha256": "2e95d59bb43287bf0213f740287ce7c4303fb23dd2706885c3101237609826f6"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0086.json",
+          "source_sha256": "58bf952ac7a4491be1929f6c4c8f45ee9e7c7593b78077688731f27d3d560b99"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0087.json",
+          "source_sha256": "6d63dc71226f1ca1f0c70ea79ec9685908a94277a69972b3738b28a7c37cc89b"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0088.json",
+          "source_sha256": "471d41f77a304643110ca46acfc89457bead81e2afb328e3e3d3f0bc323b60b4"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0089.json",
+          "source_sha256": "f358166da1693d220cb20328e7cecf20c103b633789ea1dcd7a6c2a27287bf49"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0090.json",
+          "source_sha256": "2a936a474bf7709d61da151d7a248312077ab12c33ace0fad617135addc86028"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0091.json",
+          "source_sha256": "c6364a77d4638b659b0725bfd75b253df56e3e9e2a73de55d05394d533ca6383"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0092.json",
+          "source_sha256": "82d6bf629db221fc3c720aebf8b875ad67afecb7852ea99ef1bd0b478f3ab6cd"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0093.json",
+          "source_sha256": "e591c7833cb79c38dbe0ea053f031bbf041246a56951f7141e9050bf5442cb6a"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0094.json",
+          "source_sha256": "7f7507398b6887dd1eb5bfe369613a0bd272ff3c5bb8bec7b766cdd12af81a46"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0095.json",
+          "source_sha256": "91d05fa3d667a16c0fd8d3a64816b52a90af62869cbe24a3d888a0abd6833bf7"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0096.json",
+          "source_sha256": "715ea170ac1da6f381121de795e28d7c43850f1d17ebd07c320433b4754a1dbb"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0097.json",
+          "source_sha256": "913fe0777fff85b3d699b1111ae69ca7da7b74152b663a27a456ffd9e2514768"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0098.json",
+          "source_sha256": "de3eaa10f4ca6e939e4f419e8d46150776819e972e9268791d8e9c4acc92e17f"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0099.json",
+          "source_sha256": "5032510f01e6def242a5d4e5d832a3b0845658ab7dbd70b815bc3c9f906c349b"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0100.json",
+          "source_sha256": "74e4a59eab64435c6bd48baf43640aac8606b3899a206f86b04ee345ff458eea"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0101.json",
+          "source_sha256": "087e8580a4ddafdbe7f4b5b1c84eb64c1b020e557d80f5d460fd6549dc46c31e"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0102.json",
+          "source_sha256": "b096539bd04f940aa07fe8727eca9ec3020a5a03e917b549bc467052c59adff8"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0103.json",
+          "source_sha256": "b4c56b0b0468cf19e927d69d439ace077610755906c9134d06afc95f763362e6"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0104.json",
+          "source_sha256": "b562dbd308cbfc2e4776b055f376329629ab458e1e80d578c8edbd3a04230e8f"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0105.json",
+          "source_sha256": "4b10489d331bc0ad51a5e5c10766b5b6613db5b1217b8504b975a0db0a671007"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0106.json",
+          "source_sha256": "d4097ad168c549c934942184599531835c205a3ef7c919cd68fb92b323386d66"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0107.json",
+          "source_sha256": "7ebc2580042e0af863cf67f41bc96a545442fc813100ceb5bcb78faa3786db00"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0108.json",
+          "source_sha256": "e10bdb05a815034c1d67e787bb8929e5c51343f0d03221b49ac14a171fbe58cc"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0109.json",
+          "source_sha256": "99990d16d3a31870ef7ef31e652ed25524d7049c392e69f37e1755db392aabb1"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0110.json",
+          "source_sha256": "abd24ee35df42b47ad21cd4ae7a8e176b309c781fe8599c85ba0f781907266d0"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0111.json",
+          "source_sha256": "81f8fa424d1407d61546d71ceaeec2925fa3026234be9b0ecbe651d57ffe74b4"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0112.json",
+          "source_sha256": "69730516b96676af3e4382e59f0676a990245c1b84347ea17db2c96da158ff9e"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0113.json",
+          "source_sha256": "9c4803d4ea8dba78b301254491ff8b7b9d1d6d5f8be0b87fd9ad2980cddb0796"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0114.json",
+          "source_sha256": "b7ffc2a755a8dadc0f447c0eff599936a2ea9c61bf7f18423486797ce3dd1b0e"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0115.json",
+          "source_sha256": "e8dd1c99e1bc967b7b70d6994f813f212a9801d1794808f19481b60dc7195386"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0116.json",
+          "source_sha256": "b8aac15c891336d3fc68bae6abf1b97c7db5ccb639771cd9f6061e03e1bf00dc"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0117.json",
+          "source_sha256": "4f512e96a409355cf749b93e16418358e158b18d3369a9c05d7fb8aa6c5db588"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0118.json",
+          "source_sha256": "e4782fd0619a72040d01b6c4e16016f3c9040bf827a39a86b373569d8c74b738"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0119.json",
+          "source_sha256": "037073f783cc0715ea59066bb3029f2687cbaa7455596d8adf1036bcae47e885"
+        },
+        {
+          "source": "runs/local/full-python-group-scaled-ipw-s303-long-01/linear_audits/batch-0120.json",
+          "source_sha256": "e25b663cf3a2e67db5fd81dfb6f0c6695c3f52c91dd52d95f9760ec7e56c5aff"
+        }
+      ],
+      "transformation": "Per-step audit indices, bought labels, cheap labels at those indices, and recorded pre-clipping gradient norm; other fields omitted."
+    }
+  ]
+}

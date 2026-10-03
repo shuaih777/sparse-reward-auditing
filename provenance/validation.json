@@ -1,0 +1,15 @@
+{
+  "stage": "Pre-publication validation of the source package",
+  "cpu_test_command": "CUDA_VISIBLE_DEVICES='' python -m pytest -q",
+  "tests_passed": 394,
+  "tests_failed": 0,
+  "warnings": 4,
+  "elapsed_seconds": 50.83,
+  "warning_origin": "cellpylib dependency: SyntaxWarning for is with string literal; emitted by one real Reasoning Gym composite reconstruction test",
+  "runtime": "Existing project Python 3.12.12 environment; packaged source selected through PYTHONPATH",
+  "upstream_check": "Clean checkout at pinned upstream commit from a local Git mirror; packaged patch applied successfully",
+  "code_entrypoint_import_closure": "All local script import dependencies included",
+  "fresh_dependency_install_performed": false,
+  "gpu_training_performed": false,
+  "first_party_license": "Not selected; no new rights granted by packaging"
+}

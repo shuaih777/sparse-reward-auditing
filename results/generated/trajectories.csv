@@ -1,0 +1,99 @@
+run_id,seed,method,step,accuracy_percent,wrong_trigger_share_percent,source_report
+full-python-oracle-rloo-s101-01,101,Full-oracle RLOO,0,46.09375,2.734375,reports/full-linear-six-arms-s101-01/summary.json
+full-python-oracle-rloo-s101-01,101,Full-oracle RLOO,20,71.875,0.0,reports/full-linear-six-arms-s101-01/summary.json
+full-python-oracle-rloo-s101-01,101,Full-oracle RLOO,40,73.828125,0.0,reports/full-linear-six-arms-s101-01/summary.json
+full-python-cheap-rloo-s101-01,101,Cheap RLOO,0,46.09375,2.734375,reports/full-linear-six-arms-s101-01/summary.json
+full-python-cheap-rloo-s101-01,101,Cheap RLOO,20,3.515625,95.703125,reports/full-linear-six-arms-s101-01/summary.json
+full-python-cheap-rloo-s101-01,101,Cheap RLOO,40,4.296875,95.3125,reports/full-linear-six-arms-s101-01/summary.json
+full-python-linear-replace-s101-01,101,Direct replacement,0,46.09375,2.734375,reports/full-linear-six-arms-s101-01/summary.json
+full-python-linear-replace-s101-01,101,Direct replacement,20,4.296875,93.359375,reports/full-linear-six-arms-s101-01/summary.json
+full-python-linear-replace-s101-01,101,Direct replacement,40,3.515625,96.484375,reports/full-linear-six-arms-s101-01/summary.json
+full-python-linear-ipw-s101-01,101,Linear IPW,0,46.09375,2.734375,reports/full-linear-six-arms-s101-01/summary.json
+full-python-linear-ipw-s101-01,101,Linear IPW,20,54.6875,9.375,reports/full-linear-six-arms-s101-01/summary.json
+full-python-linear-ipw-s101-01,101,Linear IPW,40,53.515625,17.1875,reports/full-linear-six-arms-s101-01/summary.json
+full-python-oracle-only-s101-01,101,Sparse oracle-only,0,46.09375,2.734375,reports/full-linear-six-arms-s101-01/summary.json
+full-python-oracle-only-s101-01,101,Sparse oracle-only,20,55.078125,0.390625,reports/full-linear-six-arms-s101-01/summary.json
+full-python-oracle-only-s101-01,101,Sparse oracle-only,40,58.59375,1.171875,reports/full-linear-six-arms-s101-01/summary.json
+full-python-oracle-centered-s101-01,101,Centered sparse oracle,0,46.09375,2.734375,reports/full-linear-six-arms-s101-01/summary.json
+full-python-oracle-centered-s101-01,101,Centered sparse oracle,20,51.953125,0.78125,reports/full-linear-six-arms-s101-01/summary.json
+full-python-oracle-centered-s101-01,101,Centered sparse oracle,40,57.03125,0.390625,reports/full-linear-six-arms-s101-01/summary.json
+full-python-cheap-rloo-s202-01,202,Cheap RLOO,0,42.1875,4.296875,reports/full-linear-s202-with-short-reference-01/summary.json
+full-python-cheap-rloo-s202-01,202,Cheap RLOO,20,4.296875,94.53125,reports/full-linear-s202-with-short-reference-01/summary.json
+full-python-cheap-rloo-s202-01,202,Cheap RLOO,40,4.296875,95.703125,reports/full-linear-s202-with-short-reference-01/summary.json
+full-update-observer-cheap-rloo-s202-20260911-01,202,"Cheap RLOO, observer",0,42.1875,4.296875,reports/update-gate-warm-20260911-01/summary.json
+full-update-observer-cheap-rloo-s202-20260911-01,202,"Cheap RLOO, observer",20,3.125,95.703125,reports/update-gate-warm-20260911-01/summary.json
+full-update-observer-cheap-rloo-s202-20260911-01,202,"Cheap RLOO, observer",40,2.734375,96.875,reports/update-gate-warm-20260911-01/summary.json
+full-python-linear-ipw-s202-long-01,202,Linear IPW,0,42.1875,4.296875,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-linear-ipw-s202-long-01,202,Linear IPW,20,56.640625,11.328125,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-linear-ipw-s202-long-01,202,Linear IPW,40,60.546875,1.953125,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-linear-ipw-s202-long-01,202,Linear IPW,80,71.09375,1.5625,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-linear-ipw-s202-long-01,202,Linear IPW,120,77.34375,0.0,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-oracle-only-s202-long-01,202,Sparse oracle-only,0,42.1875,4.296875,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-oracle-only-s202-long-01,202,Sparse oracle-only,20,51.953125,2.734375,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-oracle-only-s202-long-01,202,Sparse oracle-only,40,49.21875,0.78125,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-oracle-only-s202-long-01,202,Sparse oracle-only,80,54.296875,0.78125,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-oracle-only-s202-long-01,202,Sparse oracle-only,120,65.234375,0.390625,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-group-scaled-ipw-s202-long-01,202,Group-scaled IPW,0,42.1875,4.296875,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-group-scaled-ipw-s202-long-01,202,Group-scaled IPW,20,5.46875,92.578125,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-group-scaled-ipw-s202-long-01,202,Group-scaled IPW,40,1.953125,97.65625,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-group-scaled-ipw-s202-long-01,202,Group-scaled IPW,80,1.953125,98.046875,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-group-scaled-ipw-s202-long-01,202,Group-scaled IPW,120,2.34375,97.65625,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-cheap-grpo-s202-long-01,202,Native cheap GRPO,0,39.84375,5.859375,reports/full-cheap-grpo-s202-long-01/summary.json
+full-python-cheap-grpo-s202-long-01,202,Native cheap GRPO,20,2.34375,95.703125,reports/full-cheap-grpo-s202-long-01/summary.json
+full-python-cheap-grpo-s202-long-01,202,Native cheap GRPO,40,2.734375,97.265625,reports/full-cheap-grpo-s202-long-01/summary.json
+full-python-cheap-grpo-s202-long-01,202,Native cheap GRPO,80,2.34375,97.65625,reports/full-cheap-grpo-s202-long-01/summary.json
+full-python-cheap-grpo-s202-long-01,202,Native cheap GRPO,120,1.953125,98.046875,reports/full-cheap-grpo-s202-long-01/summary.json
+full-python-cheap-grpo-s202-40-01,202,Native cheap GRPO (40),0,39.84375,5.859375,reports/full-cheap-grpo-s202-40-01/summary.json
+full-python-cheap-grpo-s202-40-01,202,Native cheap GRPO (40),20,2.734375,95.3125,reports/full-cheap-grpo-s202-40-01/summary.json
+full-python-cheap-grpo-s202-40-01,202,Native cheap GRPO (40),40,2.34375,97.65625,reports/full-cheap-grpo-s202-40-01/summary.json
+full-python-preaudit-scaled-ipw-s202-long-01,202,Pre-audit-scaled IPW,0,42.1875,4.296875,reports/full-preaudit-scale-s202-01/summary.json
+full-python-preaudit-scaled-ipw-s202-long-01,202,Pre-audit-scaled IPW,20,51.953125,24.21875,reports/full-preaudit-scale-s202-01/summary.json
+full-python-preaudit-scaled-ipw-s202-long-01,202,Pre-audit-scaled IPW,40,31.640625,58.984375,reports/full-preaudit-scale-s202-01/summary.json
+full-python-preaudit-scaled-ipw-s202-long-01,202,Pre-audit-scaled IPW,80,33.59375,52.734375,reports/full-preaudit-scale-s202-01/summary.json
+full-python-preaudit-scaled-ipw-s202-long-01,202,Pre-audit-scaled IPW,120,49.21875,29.6875,reports/full-preaudit-scale-s202-01/summary.json
+full-update-observer-cheap-rloo-s303-20260911-01,303,"Cheap RLOO, observer",0,38.671875,6.25,reports/update-gate-warm-20260911-01/summary.json
+full-update-observer-cheap-rloo-s303-20260911-01,303,"Cheap RLOO, observer",20,3.125,93.359375,reports/update-gate-warm-20260911-01/summary.json
+full-update-observer-cheap-rloo-s303-20260911-01,303,"Cheap RLOO, observer",40,3.125,96.484375,reports/update-gate-warm-20260911-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,0,38.671875,6.25,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,20,58.203125,3.515625,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,40,33.59375,51.171875,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,80,56.640625,11.328125,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,120,66.40625,5.078125,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-only-s303-long-01,303,Sparse oracle-only,0,38.671875,6.25,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-only-s303-long-01,303,Sparse oracle-only,20,40.625,3.125,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-only-s303-long-01,303,Sparse oracle-only,40,40.625,3.125,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-only-s303-long-01,303,Sparse oracle-only,80,48.4375,0.390625,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-only-s303-long-01,303,Sparse oracle-only,120,46.484375,0.0,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-centered-s303-long-01,303,Centered sparse oracle,0,38.671875,6.25,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-centered-s303-long-01,303,Centered sparse oracle,20,43.359375,2.734375,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-centered-s303-long-01,303,Centered sparse oracle,40,39.84375,0.390625,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-centered-s303-long-01,303,Centered sparse oracle,80,44.140625,0.0,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-centered-s303-long-01,303,Centered sparse oracle,120,53.90625,0.78125,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-group-scaled-ipw-s303-long-01,303,Group-scaled IPW,0,38.671875,6.25,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-group-scaled-ipw-s303-long-01,303,Group-scaled IPW,20,3.90625,94.53125,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-group-scaled-ipw-s303-long-01,303,Group-scaled IPW,40,1.953125,97.65625,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-group-scaled-ipw-s303-long-01,303,Group-scaled IPW,80,1.953125,98.046875,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-group-scaled-ipw-s303-long-01,303,Group-scaled IPW,120,2.734375,97.265625,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-cheap-grpo-s303-long-01,303,Native cheap GRPO,0,36.328125,4.6875,reports/full-cheap-grpo-s303-long-01/summary.json
+full-python-cheap-grpo-s303-long-01,303,Native cheap GRPO,20,3.125,94.921875,reports/full-cheap-grpo-s303-long-01/summary.json
+full-python-cheap-grpo-s303-long-01,303,Native cheap GRPO,40,2.34375,96.875,reports/full-cheap-grpo-s303-long-01/summary.json
+full-python-cheap-grpo-s303-long-01,303,Native cheap GRPO,80,0.390625,99.609375,reports/full-cheap-grpo-s303-long-01/summary.json
+full-python-cheap-grpo-s303-long-01,303,Native cheap GRPO,120,1.5625,98.046875,reports/full-cheap-grpo-s303-long-01/summary.json
+full-python-cheap-grpo-s303-40-01,303,Native cheap GRPO (40),0,36.328125,4.6875,reports/full-cheap-grpo-s303-40-01/summary.json
+full-python-cheap-grpo-s303-40-01,303,Native cheap GRPO (40),20,4.296875,92.578125,reports/full-cheap-grpo-s303-40-01/summary.json
+full-python-cheap-grpo-s303-40-01,303,Native cheap GRPO (40),40,2.34375,97.65625,reports/full-cheap-grpo-s303-40-01/summary.json
+full-python-preaudit-scaled-ipw-s303-long-01,303,Pre-audit-scaled IPW,0,38.671875,6.25,reports/full-preaudit-scale-s303-01/summary.json
+full-python-preaudit-scaled-ipw-s303-long-01,303,Pre-audit-scaled IPW,20,46.09375,21.09375,reports/full-preaudit-scale-s303-01/summary.json
+full-python-preaudit-scaled-ipw-s303-long-01,303,Pre-audit-scaled IPW,40,54.6875,14.0625,reports/full-preaudit-scale-s303-01/summary.json
+full-python-preaudit-scaled-ipw-s303-long-01,303,Pre-audit-scaled IPW,80,56.25,18.359375,reports/full-preaudit-scale-s303-01/summary.json
+full-python-preaudit-scaled-ipw-s303-long-01,303,Pre-audit-scaled IPW,120,33.984375,54.6875,reports/full-preaudit-scale-s303-01/summary.json
+full-python-oracle-rloo-s303-long-01,303,Full-oracle RLOO,0,38.671875,6.25,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-rloo-s303-long-01,303,Full-oracle RLOO,20,69.140625,0.0,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-rloo-s303-long-01,303,Full-oracle RLOO,40,78.125,0.0,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-rloo-s303-long-01,303,Full-oracle RLOO,80,76.953125,0.0,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-rloo-s303-long-01,303,Full-oracle RLOO,120,77.734375,0.0,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-group-scaled-s303-long-01,303,Full-oracle group-scaled,0,38.671875,6.25,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-group-scaled-s303-long-01,303,Full-oracle group-scaled,20,69.921875,0.0,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-group-scaled-s303-long-01,303,Full-oracle group-scaled,40,77.734375,0.0,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-group-scaled-s303-long-01,303,Full-oracle group-scaled,80,81.640625,0.0,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-group-scaled-s303-long-01,303,Full-oracle group-scaled,120,81.25,0.0,reports/full-linear-long-s303-six-arms-01/summary.json

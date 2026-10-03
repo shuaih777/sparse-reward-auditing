@@ -1,0 +1,25 @@
+run_id,seed,method,final_step,accuracy_percent,wrong_trigger_share_percent,policy_labels,training_responses,evaluation_labels,shadow_predictor_labels,diagnostic_training_labels,source_report
+full-python-oracle-rloo-s101-01,101,Full-oracle RLOO,40,73.828125,0.0,10240,10240,1024,0,10240,reports/full-linear-six-arms-s101-01/summary.json
+full-python-cheap-rloo-s101-01,101,Cheap RLOO,40,4.296875,95.3125,0,10240,1024,0,10240,reports/full-linear-six-arms-s101-01/summary.json
+full-python-linear-replace-s101-01,101,Direct replacement,40,3.515625,96.484375,102,10240,1024,0,10240,reports/full-linear-six-arms-s101-01/summary.json
+full-python-linear-ipw-s101-01,101,Linear IPW,40,53.515625,17.1875,102,10240,1024,0,10240,reports/full-linear-six-arms-s101-01/summary.json
+full-python-oracle-only-s101-01,101,Sparse oracle-only,40,58.59375,1.171875,102,10240,1024,0,10240,reports/full-linear-six-arms-s101-01/summary.json
+full-python-oracle-centered-s101-01,101,Centered sparse oracle,40,57.03125,0.390625,102,10240,1024,0,10240,reports/full-linear-six-arms-s101-01/summary.json
+full-python-cheap-rloo-s202-01,202,Cheap RLOO,40,4.296875,95.703125,0,10240,1024,0,10240,reports/full-linear-s202-with-short-reference-01/summary.json
+full-update-observer-cheap-rloo-s202-20260911-01,202,"Cheap RLOO, observer",40,2.734375,96.875,0,10240,1024,102,10240,reports/update-gate-warm-20260911-01/summary.json
+full-python-linear-ipw-s202-long-01,202,Linear IPW,120,77.34375,0.0,307,30720,1536,0,30720,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-oracle-only-s202-long-01,202,Sparse oracle-only,120,65.234375,0.390625,307,30720,1536,0,30720,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-group-scaled-ipw-s202-long-01,202,Group-scaled IPW,120,2.34375,97.65625,307,30720,1536,0,30720,reports/full-linear-long-s202-three-arms-01/summary.json
+full-python-cheap-grpo-s202-long-01,202,Native cheap GRPO,120,1.953125,98.046875,0,30720,1536,0,30720,reports/full-cheap-grpo-s202-long-01/summary.json
+full-python-cheap-grpo-s202-40-01,202,Native cheap GRPO (40),40,2.34375,97.65625,0,10240,1024,0,10240,reports/full-cheap-grpo-s202-40-01/summary.json
+full-python-preaudit-scaled-ipw-s202-long-01,202,Pre-audit-scaled IPW,120,49.21875,29.6875,307,30720,1536,0,30720,reports/full-preaudit-scale-s202-01/summary.json
+full-update-observer-cheap-rloo-s303-20260911-01,303,"Cheap RLOO, observer",40,3.125,96.484375,0,10240,1024,102,10240,reports/update-gate-warm-20260911-01/summary.json
+full-python-linear-ipw-s303-long-01,303,Linear IPW,120,66.40625,5.078125,307,30720,1536,0,30720,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-only-s303-long-01,303,Sparse oracle-only,120,46.484375,0.0,307,30720,1536,0,30720,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-centered-s303-long-01,303,Centered sparse oracle,120,53.90625,0.78125,307,30720,1536,0,30720,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-group-scaled-ipw-s303-long-01,303,Group-scaled IPW,120,2.734375,97.265625,307,30720,1536,0,30720,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-cheap-grpo-s303-long-01,303,Native cheap GRPO,120,1.5625,98.046875,0,30720,1536,0,30720,reports/full-cheap-grpo-s303-long-01/summary.json
+full-python-cheap-grpo-s303-40-01,303,Native cheap GRPO (40),40,2.34375,97.65625,0,10240,1024,0,10240,reports/full-cheap-grpo-s303-40-01/summary.json
+full-python-preaudit-scaled-ipw-s303-long-01,303,Pre-audit-scaled IPW,120,33.984375,54.6875,307,30720,1536,0,30720,reports/full-preaudit-scale-s303-01/summary.json
+full-python-oracle-rloo-s303-long-01,303,Full-oracle RLOO,120,77.734375,0.0,30720,30720,1536,0,30720,reports/full-linear-long-s303-six-arms-01/summary.json
+full-python-oracle-group-scaled-s303-long-01,303,Full-oracle group-scaled,120,81.25,0.0,30720,30720,1536,0,30720,reports/full-linear-long-s303-six-arms-01/summary.json

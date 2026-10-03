@@ -1,0 +1,20 @@
+{
+  "all_sha256_match": true,
+  "files": [
+    {
+      "path": "runs/local/gradient-python-seed17-01/models/20260904_233447_Qwen3-1.7B-Base_sr_gradient-python-seed17-01_1p0_0p0_1p0_grpo_17_rule/checkpoint-20/model.safetensors",
+      "sha256": "7693a458f758623c06adbd3f665d71360f54fef358279f9b6f2414783fba2deb",
+      "bytes": 3441185608
+    },
+    {
+      "path": "runs/local/gradient-python-seed17-01/models/20260904_233447_Qwen3-1.7B-Base_sr_gradient-python-seed17-01_1p0_0p0_1p0_grpo_17_rule/checkpoint-20/config.json",
+      "sha256": "b4ae7bcf47d10eb890d3869c34f3664ea0a5a4d3ebcdf39bbcbfd236637fe529",
+      "bytes": 1360
+    },
+    {
+      "path": "runs/local/gradient-python-seed17-01/models/20260904_233447_Qwen3-1.7B-Base_sr_gradient-python-seed17-01_1p0_0p0_1p0_grpo_17_rule/checkpoint-20/tokenizer.json",
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "bytes": 11422654
+    }
+  ]
+}

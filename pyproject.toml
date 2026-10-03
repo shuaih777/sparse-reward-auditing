@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinel-repair"
+version = "0.1.0"
+description = "Group-aware oracle-budget experiments for verifier-induced RLVR gradient corruption"
+readme = "README.md"
+requires-python = "==3.12.12"
+dependencies = [
+  "matplotlib>=3.10,<4",
+  "numpy>=1.26,<2",
+  "pandas>=2.2,<3",
+  "PyYAML>=6.0,<7",
+  "scikit-learn>=1.6,<2",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.3,<9"]
+train = [
+  "llm-verifier-noise",
+  # The pinned upstream requires vLLM 0.11.2 and its GRPO config requires
+  # fields introduced after TRL 0.25.
+  # An open-ended `trl>=0.25` now resolves to TRL 1.x, whose vLLM API is newer.
+  "trl==0.26.2",
+]
+
+[tool.uv.sources]
+llm-verifier-noise = { path = "third_party/llm-verifier-noise", editable = true }
+
+[project.scripts]
+sentinel-repair = "sentinel_repair.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+
+[tool.isort]
+profile = "black"

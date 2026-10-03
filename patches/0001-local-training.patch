@@ -1,0 +1,822 @@
+diff --git a/src/data/base.py b/src/data/base.py
+index 88c3fd1..61d9db4 100644
+--- a/src/data/base.py
++++ b/src/data/base.py
+@@ -9,7 +9,7 @@ interfaces for different training paradigms.
+ import re
+ import warnings
+ from abc import ABC, abstractmethod
+-from dataclasses import dataclass
++from dataclasses import dataclass, field
+ from typing import Any, Callable, Optional
+ 
+ import numpy as np
+@@ -93,6 +93,13 @@ class Mixup:
+     # aggregated by the trainer across processes.
+     triggered: int = 0
+     triggered_and_correct: int = 0
++    # Exact per-item selector result from the latest reward call.  The trainer
++    # consumes and clears this buffer together with its per-item oracle labels.
++    # It is deliberately the mask used by the noise mechanism itself rather
++    # than a later reconstruction from rendered completion text.
++    _last_trigger_matches: list[bool] = field(
++        default_factory=list, init=False, repr=False
++    )
+     # Oracle alternation step-level stats (reset every mixup call)
+     oracle_step_active: int = 0
+     oracle_step_items: int = 0
+@@ -612,6 +619,9 @@ class Mixup:
+             processed so far, which are exposed via realized_tpr and realized_fpr.
+         """
+         n = len(rewards)
++        # Reset first so an exception or a non-targeted call can never leak a
++        # stale selector mask into a later debug-log row.
++        self._last_trigger_matches = [False] * n
+         self.gt_positive = 0
+         self.gt_negative = 0
+         self.realized_TP = 0
+@@ -699,6 +709,9 @@ class Mixup:
+         else:
+             raise NotImplementedError(f"Unknown mixup strategy: {active_strategy}")
+ 
++        if active_strategy == MixupStrategies.TARGETED:
++            self._last_trigger_matches = [bool(ok) for ok in is_flip_target]
++
+         mixed_rewards: list[float] = []
+         for r, ok, tpr_i, fpr_i in zip(
+             rewards, is_flip_target, per_item_TPR, per_item_FPR
+diff --git a/src/train/debug_alignment.py b/src/train/debug_alignment.py
+new file mode 100644
+index 0000000..989f6fa
+--- /dev/null
++++ b/src/train/debug_alignment.py
+@@ -0,0 +1,131 @@
++"""Fail-closed construction of row-level GRPO debug-log identifiers.
++
++The logger receives several independently gathered arrays.  A TSV is useful
++for counterfactual group analysis only when those arrays have identical order
++and every contiguous GRPO block is a real prompt group.  Keep the checks in a
++small dependency-free module so they can be unit tested without constructing a
++trainer.
++"""
++
++from __future__ import annotations
++
++import math
++from collections.abc import Sequence
++from typing import Any
++
++
++def live_batch_geometry(num_processes: int) -> tuple[int, int]:
++    """Return the validated local/global rollout counts for live auditing."""
++
++    expected_global = 256
++    if isinstance(num_processes, bool) or not isinstance(num_processes, int):
++        raise TypeError("num_processes must be an integer")
++    if num_processes not in {1, 2}:
++        raise ValueError("the validated live-audit run requires one or two ranks")
++    if expected_global % num_processes != 0:
++        raise ValueError("global live-audit batch must divide evenly across ranks")
++    return expected_global // num_processes, expected_global
++
++
++def _binary(values: Sequence[Any], *, name: str) -> list[int]:
++    parsed: list[int] = []
++    for index, value in enumerate(values):
++        try:
++            number = float(value)
++        except (TypeError, ValueError) as exc:
++            raise ValueError(f"{name}[{index}] is not numeric: {value!r}") from exc
++        if not math.isfinite(number) or number not in (0.0, 1.0):
++            raise ValueError(f"{name}[{index}] is not binary: {value!r}")
++        parsed.append(int(number))
++    return parsed
++
++
++def build_debug_alignment_columns(
++    *,
++    step: int | str,
++    prompts: Sequence[Any],
++    rewards: Sequence[Any],
++    advantages: Sequence[Any],
++    oracle_rewards: Sequence[Any],
++    trigger_matches: Sequence[Any],
++    num_generations: int,
++) -> dict[str, list[Any]]:
++    """Validate gathered arrays and return explicit row/group log columns.
++
++    ``trigger_matches`` must be the exact per-item selector mask captured by
++    ``Mixup.mixup_rewards``.  Recomputing it from rendered text here could
++    disagree with token-id selectors and would invalidate alignment claims.
++    """
++
++    # TRL stores some log buffers as deques.  Snapshot every independently
++    # gathered input before slicing or validating it so one consistent order is
++    # used throughout this call.
++    prompt_rows = list(prompts)
++    reward_rows = list(rewards)
++    advantage_rows = list(advantages)
++    oracle_rows = list(oracle_rewards)
++    trigger_rows = list(trigger_matches)
++
++    if isinstance(num_generations, bool) or not isinstance(num_generations, int):
++        raise TypeError("num_generations must be an integer")
++    if num_generations <= 0:
++        raise ValueError("num_generations must be positive")
++
++    total = len(prompt_rows)
++    lengths = {
++        "prompts": total,
++        "rewards": len(reward_rows),
++        "advantages": len(advantage_rows),
++        "oracle_rewards": len(oracle_rows),
++        "trigger_matches": len(trigger_rows),
++    }
++    if len(set(lengths.values())) != 1:
++        raise ValueError(f"unaligned GRPO debug arrays: {lengths}")
++    if total % num_generations != 0:
++        raise ValueError(
++            f"{total} rows cannot form groups of {num_generations} generations"
++        )
++
++    cheap = _binary(reward_rows, name="rewards")
++    oracle = _binary(oracle_rows, name="oracle_rewards")
++    triggers = _binary(trigger_rows, name="trigger_matches")
++
++    group_indices: list[int] = []
++    positions: list[int] = []
++    group_ids: list[str] = []
++    for start in range(0, total, num_generations):
++        group_index = start // num_generations
++        prompt = prompt_rows[start]
++        block = prompt_rows[start : start + num_generations]
++        if any(item != prompt for item in block[1:]):
++            raise ValueError(
++                "prompt order does not form contiguous GRPO groups: "
++                f"step={step}, group_index={group_index}"
++            )
++        for position in range(num_generations):
++            group_indices.append(group_index)
++            positions.append(position)
++            group_ids.append(f"{step}:{group_index}")
++
++    label_error = [int(c != o) for c, o in zip(cheap, oracle)]
++    false_positive = [int(c == 1 and o == 0) for c, o in zip(cheap, oracle)]
++    false_negative = [int(c == 0 and o == 1) for c, o in zip(cheap, oracle)]
++
++    return {
++        "row_in_log": list(range(total)),
++        "group_in_log": group_indices,
++        "group_id": group_ids,
++        "group_position": positions,
++        "group_size": [num_generations] * total,
++        "is_flip_target": triggers,
++        "label_error": label_error,
++        "false_positive": false_positive,
++        "false_negative": false_negative,
++        "triggered_false_positive": [
++            int(bool(trigger) and bool(fp))
++            for trigger, fp in zip(triggers, false_positive)
++        ],
++    }
++
++
++__all__ = ("build_debug_alignment_columns", "live_batch_geometry")
+diff --git a/src/train/grpo.py b/src/train/grpo.py
+index f93e860..de96be7 100644
+--- a/src/train/grpo.py
++++ b/src/train/grpo.py
+@@ -1,6 +1,10 @@
++import dataclasses
+ import datetime
++import json
++import os
+ import re
+ import warnings
++from enum import Enum
+ from gc import callbacks
+ from pathlib import Path
+ from typing import Any, Dict, List, Optional
+@@ -8,20 +12,39 @@ from typing import Any, Dict, List, Optional
+ import accelerate
+ import pandas as pd
+ import torch
+-from accelerate.utils import gather_object
+-from huggingface_hub import HfApi
++from accelerate.utils import broadcast_object_list, gather_object
+ from peft import get_peft_model
+ from torch import gather
+ from transformers import Trainer, set_seed
+ from trl import GRPOTrainer
+ 
++from sentinel_repair.live import PublicRollout, StreamingAuditEngine
++from sentinel_repair.propagation import ContrastGateConfig
++from sentinel_repair.selectors import (
++    FalsePositiveOnlyRiskModel,
++    TokenEnrichmentRiskModel,
++)
++
+ from src.configs import TrainConfig
+ from src.data.base import Mixup
++from src.train.debug_alignment import (
++    build_debug_alignment_columns,
++    live_batch_geometry,
++)
+ from src.train.train_tools import TrainTools
+ 
+ 
+ def grpo(training_config: TrainConfig) -> None:
+ 
++    if (
++        os.environ.get("SENTINEL_REPAIR_LIVE_AUDIT", "0") == "1"
++        and training_config.resume_from_checkpoint
++    ):
++        raise ValueError(
++            "live audit does not support checkpoint resume: controller and budget "
++            "state would need to be restored atomically"
++        )
++
+     train_tools = TrainTools(training_config, "grpo")
+ 
+     model = train_tools.model
+@@ -64,6 +87,25 @@ def grpo(training_config: TrainConfig) -> None:
+ 
+ class GRPOTrainerDebug(GRPOTrainer):
+     def __init__(self, *args, **kwargs):
++        self._live_audit_enabled = (
++            os.environ.get("SENTINEL_REPAIR_LIVE_AUDIT", "0") == "1"
++        )
++        self._live_audit_policy = os.environ.get(
++            "SENTINEL_REPAIR_LIVE_POLICY", "audit-only"
++        )
++        if self._live_audit_enabled and self._live_audit_policy not in {
++            "audit-only",
++            "fp-only-audit",
++            "fp-family-gate",
++        }:
++            raise ValueError(
++                "SENTINEL_REPAIR_LIVE_POLICY must be audit-only, fp-only-audit, "
++                "or fp-family-gate"
++            )
++        self._live_audit_engine = None
++        self._live_debug_local_oracle_rewards: List[float] = []
++        self._live_debug_global_cheap_rewards: List[float] = []
++        self._live_latest_metrics: Dict[str, float] = {}
+         self.mixup = kwargs.pop("mixup", None)
+         self.train_tools = kwargs.pop("train_tools", None)
+         super().__init__(*args, **kwargs)
+@@ -85,8 +127,9 @@ class GRPOTrainerDebug(GRPOTrainer):
+         # Setup logging directory
+         if self.train_tools is not None:
+             dir_name = f"{timestamp}_{self.train_tools.save_name}"
++            local_output = self.train_tools.model_dir / self.train_tools.save_name
+             print(
+-                f"The model will be saved to: {HfApi().whoami()['name']}/{self.train_tools.save_name}"
++                f"Local-only run; optional model output directory: {local_output}"
+             )
+         else:
+             dir_name = timestamp
+@@ -101,6 +144,405 @@ class GRPOTrainerDebug(GRPOTrainer):
+         # (exist_ok=True handles the race condition safely)
+         self.logdir.mkdir(parents=True, exist_ok=True)
+ 
++        if self._live_audit_enabled:
++            self._initialize_live_audit()
++
++    @staticmethod
++    def _live_json_default(value):
++        if isinstance(value, Enum):
++            return value.value
++        raise TypeError(f"cannot serialize live-audit value {type(value).__name__}")
++
++    @staticmethod
++    def _live_public_text(value: Any, *, field: str) -> str:
++        """Render only the user/assistant message content at the public wall."""
++
++        if isinstance(value, str):
++            return value
++        if isinstance(value, (list, tuple)):
++            parts: List[str] = []
++            for message in value:
++                if not isinstance(message, dict) or "content" not in message:
++                    raise TypeError(f"{field} must contain message dictionaries")
++                content = message["content"]
++                if not isinstance(content, str):
++                    raise TypeError(f"{field} message content must be a string")
++                parts.append(content)
++            return "\n".join(parts)
++        raise TypeError(f"{field} must be text or a message list")
++
++    def _initialize_live_audit(self) -> None:
++        """Initialize the one authoritative controller on global rank zero."""
++
++        live_batch_geometry(int(self.accelerator.num_processes))
++        if int(self.num_generations) != 4:
++            raise ValueError("the validated live-audit run requires num_generations=4")
++        if len(self.reward_funcs) != 1 or len(self.reward_weights) != 1:
++            raise ValueError("live audit requires exactly one reward function")
++        if float(self.reward_weights[0].item()) != 1.0:
++            raise ValueError("live audit requires the sole reward weight to equal one")
++        if float(self.beta) != 0.0:
++            raise ValueError(
++                "reward-only quarantine is valid only with beta=0; nonzero KL "
++                "requires an explicit loss mask"
++            )
++        if str(self.scale_rewards) != "group":
++            raise ValueError("live audit is validated only for group reward scaling")
++
++        if self.accelerator.is_main_process:
++            budget_rate = os.environ.get("SENTINEL_REPAIR_AUDIT_RATE", "0.01")
++            sentinel_fraction = os.environ.get(
++                "SENTINEL_REPAIR_SENTINEL_FRACTION", "0.05"
++            )
++            seed = int(os.environ.get("SENTINEL_REPAIR_AUDIT_SEED", "42"))
++            engine_kwargs = {}
++            if self._live_audit_policy == "fp-family-gate":
++                propagation_model = TokenEnrichmentRiskModel()
++                engine_kwargs = {
++                    "propagation_model": propagation_model,
++                    "propagation_config": ContrastGateConfig(
++                        min_error_support=2,
++                        min_error_coverage=0.8,
++                        min_prevalence_ratio=10.0,
++                    ),
++                }
++            elif self._live_audit_policy == "fp-only-audit":
++                engine_kwargs = {
++                    "risk_model": FalsePositiveOnlyRiskModel(
++                        TokenEnrichmentRiskModel()
++                    )
++                }
++            self._live_audit_engine = StreamingAuditEngine(
++                budget_rate=budget_rate,
++                sentinel_fraction=sentinel_fraction,
++                seed=seed,
++                **engine_kwargs,
++            )
++            self._live_audit_logdir = self.logdir / "live_audit"
++            self._live_audit_logdir.mkdir(parents=True, exist_ok=True)
++            if self._live_audit_policy == "fp-family-gate":
++                policy_detail = (
++                    "FP-only token enrichment, expected group marginal, "
++                    "failure-family hard gate=(support=2, coverage=.8, ratio=10)"
++                )
++            elif self._live_audit_policy == "fp-only-audit":
++                policy_detail = (
++                    "FP-only token enrichment, expected group marginal, "
++                    "propagation disabled"
++                )
++            else:
++                policy_detail = "token enrichment, expected group marginal"
++            warnings.warn(
++                f"Live 1% audit active ({self._live_audit_policy}): "
++                f"{policy_detail}, sentinel rho={sentinel_fraction}, "
++                "saturation guard."
++            )
++
++    def _consume_live_oracle_rewards(self) -> List[float]:
++        """Consume the reward function's latest local truth buffer immediately."""
++
++        reward_func = self.reward_funcs[0]
++        local = list(getattr(reward_func, "_oracle_rewards", []))
++        reward_func._oracle_rewards = []
++        self._live_debug_local_oracle_rewards.extend(float(value) for value in local)
++        return [float(value) for value in local]
++
++    def _write_live_audit_result(self, result) -> None:
++        """Write purchased labels and decisions, never unpurchased oracle labels."""
++
++        payload = {
++            "batch_index": result.batch_index,
++            "step": result.step,
++            "budget": dataclasses.asdict(result.budget),
++            "quarantined_group_ids": list(result.quarantined_group_ids),
++            "audit_records": [
++                dataclasses.asdict(record) for record in result.audit_records
++            ],
++            "intervention_transitions": [
++                dataclasses.asdict(transition) for transition in result.transitions
++            ],
++            "controller_actions": [
++                dataclasses.asdict(action) for action in result.controller_actions
++            ],
++            "controller_transitions": [
++                dataclasses.asdict(transition)
++                for transition in result.controller_transitions
++            ],
++            "propagation_config": (
++                None
++                if result.propagation_config is None
++                else {
++                    "kind": "failure_family_contrast",
++                    **dataclasses.asdict(result.propagation_config),
++                }
++            ),
++            "propagation_records": [
++                dataclasses.asdict(record) for record in result.propagation_records
++            ],
++        }
++        output = self._live_audit_logdir / f"batch-{result.batch_index:04d}.json"
++        output.write_text(
++            json.dumps(
++                payload,
++                indent=2,
++                sort_keys=True,
++                default=self._live_json_default,
++            )
++            + "\n",
++            encoding="utf-8",
++        )
++
++    def _calculate_rewards(self, inputs, prompts, completions, completion_ids_list):
++        """Apply paid corrections before TRL computes group-relative advantages."""
++
++        cheap_global = super()._calculate_rewards(
++            inputs, prompts, completions, completion_ids_list
++        )
++        if not self._live_audit_enabled or not self.model.training:
++            return cheap_global
++
++        expected_local, expected_global = live_batch_geometry(
++            int(self.accelerator.num_processes)
++        )
++        local_count = len(prompts)
++        process_index = int(self.accelerator.process_index)
++        local_errors: List[str] = []
++        if local_count != expected_local:
++            local_errors.append(
++                f"expected {expected_local} local prompts, got {local_count}"
++            )
++        if len(completions) != expected_local:
++            local_errors.append(
++                f"expected {expected_local} local completions, got {len(completions)}"
++            )
++        if tuple(cheap_global.shape) != (expected_global, 1):
++            local_errors.append(
++                "expected global reward shape (256, 1), got "
++                f"{tuple(cheap_global.shape)}"
++            )
++
++        # Keep all post-super collectives shape-stable even when one rank has
++        # malformed local state.  Rank zero will broadcast the resulting error
++        # envelope instead of leaving its peer blocked in a collective.
++        local_start = process_index * expected_local
++        local_public = []
++        for index in range(expected_local):
++            try:
++                prompt = prompts[index]
++                completion = completions[index]
++                reward = float(cheap_global[local_start + index, 0].item())
++                local_public.append(
++                    {
++                        "rank": process_index,
++                        "local_index": index,
++                        "prompt": self._live_public_text(prompt, field="prompt"),
++                        "completion": self._live_public_text(
++                            completion, field="completion"
++                        ),
++                        "cheap_reward": reward,
++                    }
++                )
++            except BaseException as exc:
++                local_errors.append(
++                    f"public row {index}: {type(exc).__name__}: {exc}"
++                )
++                local_public.append(
++                    {
++                        "rank": process_index,
++                        "local_index": index,
++                        "prompt": "",
++                        "completion": "",
++                        "cheap_reward": 0.0,
++                    }
++                )
++        local_oracle = self._consume_live_oracle_rewards()
++        if len(local_oracle) != local_count:
++            local_errors.append(
++                "oracle buffer length does not match the local batch: "
++                f"{len(local_oracle)} != {local_count}"
++            )
++        padded_local_oracle = (local_oracle + [float("nan")] * expected_local)[
++            :expected_local
++        ]
++        gathered_public = gather_object(
++            [{"rank": process_index, "rows": local_public, "errors": local_errors}]
++        )
++        oracle_tensor = torch.tensor(
++            padded_local_oracle,
++            device=self.accelerator.device,
++            dtype=torch.float32,
++        )
++        global_oracle = self.accelerator.gather(oracle_tensor).tolist()
++
++        envelope: List[Optional[Dict[str, Any]]] = [None]
++        if self.accelerator.is_main_process:
++            try:
++                if len(gathered_public) != self.accelerator.num_processes:
++                    raise ValueError(
++                        "public gather did not return one payload per rank"
++                    )
++                global_public = []
++                for expected_rank, payload in enumerate(gathered_public):
++                    if payload["rank"] != expected_rank:
++                        raise ValueError("public object gather is not rank-major")
++                    if payload["errors"]:
++                        raise ValueError(
++                            f"rank {expected_rank} live input errors: "
++                            + "; ".join(payload["errors"])
++                        )
++                    if len(payload["rows"]) != expected_local:
++                        raise ValueError(
++                            "public rank payload does not have "
++                            f"{expected_local} rows"
++                        )
++                    global_public.extend(payload["rows"])
++                if len(global_public) != expected_global:
++                    raise ValueError("global public batch does not have 256 rows")
++                for global_index, row in enumerate(global_public):
++                    expected_rank = global_index // expected_local
++                    expected_local_index = global_index % expected_local
++                    if (
++                        row["rank"] != expected_rank
++                        or row["local_index"] != expected_local_index
++                    ):
++                        raise ValueError("public object gather is not rank-major")
++                    if float(row["cheap_reward"]) != float(
++                        cheap_global[global_index, 0].item()
++                    ):
++                        raise ValueError("public/tensor reward gathers are misaligned")
++                if len(global_oracle) != expected_global:
++                    raise ValueError("global oracle vector does not have 256 labels")
++                if any(float(value) not in {0.0, 1.0} for value in global_oracle):
++                    raise ValueError("global oracle vector is not binary")
++
++                group_size = int(self.num_generations)
++                public_groups = []
++                for start in range(0, expected_global, group_size):
++                    block = global_public[start : start + group_size]
++                    if any(row["prompt"] != block[0]["prompt"] for row in block[1:]):
++                        raise ValueError(
++                            f"rows {start}:{start + group_size} are not one prompt group"
++                        )
++                    public_groups.append(
++                        tuple(
++                            PublicRollout(
++                                prompt=row["prompt"],
++                                completion=row["completion"],
++                                cheap_reward=row["cheap_reward"],
++                            )
++                            for row in block
++                        )
++                    )
++
++                engine = self._live_audit_engine
++                if engine is None:
++                    raise RuntimeError("rank zero has no live audit engine")
++                first_rollout_id = engine.next_rollout_id
++                hidden_truth = {
++                    first_rollout_id + index: float(label)
++                    for index, label in enumerate(global_oracle)
++                }
++                result = engine.process_batch(
++                    tuple(public_groups),
++                    lambda request: hidden_truth[request.rollout_id],
++                    step=self.state.global_step,
++                )
++                if result.rollout_ids_flat != tuple(
++                    range(first_rollout_id, first_rollout_id + expected_global)
++                ):
++                    raise AssertionError("live engine returned nonmonotonic rollout ids")
++
++                audited = {record.rollout_id for record in result.audit_records}
++                quarantined = set(result.quarantined_group_ids)
++                propagated = {
++                    record.rollout_id for record in result.propagation_records
++                }
++                if audited & propagated:
++                    raise AssertionError(
++                        "a purchased rollout was also changed by propagation"
++                    )
++                effective = result.effective_rewards_flat
++                for index, (cheap, repaired) in enumerate(
++                    zip(cheap_global[:, 0].tolist(), effective, strict=True)
++                ):
++                    rollout_id = first_rollout_id + index
++                    group_id = result.group_ids[index // group_size]
++                    if cheap != repaired and (
++                        rollout_id not in audited
++                        and group_id not in quarantined
++                        and rollout_id not in propagated
++                    ):
++                        raise AssertionError(
++                            "effective reward changed without a purchase, quarantine, "
++                            "or propagation record"
++                        )
++                for group_id in quarantined:
++                    if not any(
++                        record.group_id == group_id and record.label_error
++                        for record in result.audit_records
++                    ):
++                        raise AssertionError(
++                            "quarantined group has no purchased mismatch"
++                        )
++
++                self._write_live_audit_result(result)
++                actions = result.controller_actions
++                summary = {
++                    "audit_batch_index": float(result.batch_index),
++                    "audit_seen": float(result.budget.seen_labels),
++                    "audit_allowed": float(result.budget.allowed_calls),
++                    "audit_spent": float(result.budget.spent_calls),
++                    "audit_batch_calls": float(len(result.audit_records)),
++                    "audit_batch_mismatches": float(
++                        sum(record.label_error for record in result.audit_records)
++                    ),
++                    "audit_batch_quarantines": float(
++                        len(result.quarantined_group_ids)
++                    ),
++                    "audit_batch_sentinel_calls": float(
++                        sum(action.arm.value == "sentinel" for action in actions)
++                    ),
++                    "audit_batch_repair_calls": float(
++                        sum(action.arm.value == "repair" for action in actions)
++                    ),
++                    "audit_batch_propagated": float(len(propagated)),
++                }
++                envelope[0] = {
++                    "ok": True,
++                    "effective_rewards": list(effective),
++                    "summary": summary,
++                }
++            except BaseException as exc:
++                envelope[0] = {
++                    "ok": False,
++                    "error": f"{type(exc).__name__}: {exc}",
++                }
++
++        # Every rank always reaches this collective.  Rank-zero failures are
++        # broadcast before raising so peers do not hang in a later collective.
++        broadcast_object_list(envelope, from_process=0)
++        message = envelope[0]
++        if message is None or not message.get("ok", False):
++            detail = (
++                "missing rank-zero failure envelope"
++                if message is None
++                else message.get("error")
++            )
++            raise RuntimeError(f"live audit aborted the policy update: {detail}")
++
++        effective_global = cheap_global.clone()
++        effective_global[:, 0] = torch.tensor(
++            message["effective_rewards"],
++            device=cheap_global.device,
++            dtype=cheap_global.dtype,
++        )
++        self._live_latest_metrics = dict(message["summary"])
++        if self.accelerator.is_main_process:
++            self._live_debug_global_cheap_rewards.extend(
++                float(value) for value in cheap_global[:, 0].tolist()
++            )
++        return effective_global
++
+     def _compute_global_tpr_fpr(self):
+         """Aggregate Mixup counters across all processes safely."""
+         device = self.accelerator.device
+@@ -297,7 +739,10 @@ class GRPOTrainerDebug(GRPOTrainer):
+         rf = rf[0] if rf is not None else None
+ 
+         local_rewards: List[float] = []
+-        if rf is not None and hasattr(rf, "_oracle_rewards"):
++        if self._live_audit_enabled:
++            local_rewards = list(self._live_debug_local_oracle_rewards)
++            self._live_debug_local_oracle_rewards = []
++        elif rf is not None and hasattr(rf, "_oracle_rewards"):
+             local_rewards = list(rf._oracle_rewards)
+             rf._oracle_rewards = []  # clear per-rank buffer
+ 
+@@ -313,6 +758,29 @@ class GRPOTrainerDebug(GRPOTrainer):
+         # Every rank now has the same global oracle reward list
+         return global_tensor.tolist()
+ 
++    def _get_global_trigger_matches(self) -> List[int]:
++        """Gather the exact per-item targeted-selector mask and clear it.
++
++        The mask is captured inside ``Mixup.mixup_rewards`` before rewards are
++        sampled.  Re-evaluating a selector from logged strings here would not
++        preserve token-id selector semantics.
++        """
++
++        local_matches: List[bool] = []
++        if self.mixup is not None:
++            local_matches = list(
++                getattr(self.mixup, "_last_trigger_matches", [])
++            )
++            self.mixup._last_trigger_matches = []
++
++        local_tensor = torch.tensor(
++            local_matches,
++            device=self.accelerator.device,
++            dtype=torch.int8,
++        )
++        global_tensor = self.accelerator.gather(local_tensor)
++        return [int(value) for value in global_tensor.tolist()]
++
+     def _get_local_extracted_answers(self) -> List[Any]:
+         """Extracts ground-truth answers from the local process and clears the buffer."""
+         rf = getattr(self, "reward_funcs", None)
+@@ -417,10 +885,13 @@ class GRPOTrainerDebug(GRPOTrainer):
+         # 1. Capture Local Oracle Rewards FIRST
+         # We must do this before any gathering or aggregation logic
+         global_oracle_rewards = self._get_global_oracle_rewards()
++        global_trigger_matches = self._get_global_trigger_matches()
+         global_gt_answers = self._get_global_gt_answers()
+         global_extracted_answers = self._get_global_extracted_answers()
+         global_verifier_reasoning = self._get_global_verifier_reasoning()
+         global_rubrics = self._get_global_rubrics()
++        live_cheap_rewards = list(self._live_debug_global_cheap_rewards)
++        self._live_debug_global_cheap_rewards = []
+ 
+         # 2. Compute Standard Metrics
+         mode = "train" if self.model.training else "eval"
+@@ -431,6 +902,12 @@ class GRPOTrainerDebug(GRPOTrainer):
+             if mode == "eval":
+                 metrics = {f"eval_{key}": val for key, val in metrics.items()}
+             logs = {**logs, **metrics}
++        if self._live_audit_enabled:
++            logs = {**logs, **self._live_latest_metrics}
++            if self.accelerator.is_main_process and live_cheap_rewards:
++                logs["cheap_reward"] = float(
++                    sum(live_cheap_rewards) / len(live_cheap_rewards)
++                )
+ 
+         if self.log_completions:
+             # --- A. Global Scalars (For Neptune) ---
+@@ -497,16 +974,38 @@ class GRPOTrainerDebug(GRPOTrainer):
+                 s = s.replace("\n", "[LF]")
+                 return s + "\n"
+ 
+-            if self.accelerator.is_main_process:
++            if self.accelerator.is_main_process and (
++                global_oracle_rewards or global_trigger_matches
++            ):
+                 try:
+                     all_query = self._logs["prompt"]
+                     all_completions = self._logs["completion"]
+                     total_len = len(all_query)
++                    all_rewards = self._logs["rewards"]["reward"]
++                    all_advantages = self._logs["advantages"]
++                    num_generations = int(
++                        getattr(
++                            self,
++                            "num_generations",
++                            getattr(self.args, "num_generations", 0),
++                        )
++                    )
++
++                    alignment_columns = build_debug_alignment_columns(
++                        step=self.state.global_step,
++                        prompts=all_query,
++                        rewards=all_rewards,
++                        advantages=all_advantages,
++                        oracle_rewards=global_oracle_rewards,
++                        trigger_matches=global_trigger_matches,
++                        num_generations=num_generations,
++                    )
+ 
+                     table = {
+                         "step": [str(self.state.global_step)] * total_len,
+                         "prompt": [_truncate(q) for q in all_query],
+                         "completion": [_truncate(c) for c in all_completions],
++                        **alignment_columns,
+                     }
+ 
+                     # Add Verifier Reasoning
+@@ -527,14 +1026,20 @@ class GRPOTrainerDebug(GRPOTrainer):
+                     else:
+                         table["rubric"] = [None] * total_len
+ 
+-                    table["reward"] = self._logs["rewards"]["reward"]
+-                    table["advantage"] =  self._logs["advantages"]
+-
+-                    # Add Oracle Rewards (Perfect alignment guaranteed locally)
+-                    if len(global_oracle_rewards) == total_len:
+-                        table["oracle_reward"] = global_oracle_rewards
+-                    else:
+-                        table["oracle_reward"] = [None] * total_len
++                    table["reward"] = all_rewards
++                    if self._live_audit_enabled:
++                        if len(live_cheap_rewards) != total_len:
++                            raise ValueError(
++                                "live cheap-reward buffer is not aligned with TRL logs: "
++                                f"{len(live_cheap_rewards)} != {total_len}"
++                            )
++                        table["cheap_reward"] = live_cheap_rewards
++                    table["advantage"] = all_advantages
++
++                    # The alignment helper validates this length before any TSV
++                    # is written.  Never emit apparently valid rows with missing
++                    # oracle labels in the mechanism experiment.
++                    table["oracle_reward"] = global_oracle_rewards
+                     # Add GT Answers (Hashes only)
+                     if len(global_gt_answers) == total_len:
+                         table["gt_answer"] = global_gt_answers

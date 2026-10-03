@@ -1,0 +1,194 @@
+{
+  "source_project_commit": "eef9ce0",
+  "note": "File hashes identify the current working-tree files, including camera-ready changes; the commit alone does not identify this release.",
+  "files": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "77ae311a48a11900ab2c8eb1a42a11995f146f3812e9ef53be0af0f55113bb96"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "b04993e61df3b485e972749dd389c45db8ce34287ebfd35db1b1c273daf19486"
+    },
+    {
+      "path": "patches/0001-local-training.patch",
+      "sha256": "0a4cbdaef8e2e4fd3472d01c6c7576934255140aa93509f3ed8e886fee64dafd"
+    },
+    {
+      "path": "src/sentinel_repair/__init__.py",
+      "sha256": "d199bd7516f74eb4fd668e04466b6b535c49b87c1c896d470218bf3c628ce122"
+    },
+    {
+      "path": "src/sentinel_repair/advantages.py",
+      "sha256": "d662a61f915c66668dd204db20adefc877adf1b3ccdf65f02b4257c1b47170af"
+    },
+    {
+      "path": "src/sentinel_repair/analysis.py",
+      "sha256": "9ea93044497aafaa2c1a0460cca562b2d2f38944c0bacbc098b2b12fe0a99001"
+    },
+    {
+      "path": "src/sentinel_repair/cli.py",
+      "sha256": "0eab8bb08d247e536eae7452eeb71d9ff27711af57ab2d49ce98ceb2b3507999"
+    },
+    {
+      "path": "src/sentinel_repair/contrast_eval.py",
+      "sha256": "93684bd7e220fab58905d9d229fd58928d45dfba7263610728d46d44a8d6b867"
+    },
+    {
+      "path": "src/sentinel_repair/controller.py",
+      "sha256": "4d7ab25b114067545aeac9b5dcf1b219c91e56c6fea6838696af24e2cf1bdd24"
+    },
+    {
+      "path": "src/sentinel_repair/data.py",
+      "sha256": "00b13232520474e5c5029ac0a7ba941b685e3ff1afde6a944081c17bd693f63e"
+    },
+    {
+      "path": "src/sentinel_repair/full_linear.py",
+      "sha256": "7091d4e6c7034ebb539146c0d48fbc960fce3a48a47429d63da4fac0cc23b50a"
+    },
+    {
+      "path": "src/sentinel_repair/group_selectors.py",
+      "sha256": "371401f95f6c063f3cae4ca66b01c1626eb6871c394b2fbcfd95547c5cdc6ab6"
+    },
+    {
+      "path": "src/sentinel_repair/harm.py",
+      "sha256": "f932c59dba71f61c0b14f172825eb915427358afc4091d2aaffda75f111cbae2"
+    },
+    {
+      "path": "src/sentinel_repair/linear_audit.py",
+      "sha256": "edbfa153bf4a3a67514d4969f5a65ad13e603e1e9781ccc65ee465d5330e6c6a"
+    },
+    {
+      "path": "src/sentinel_repair/live.py",
+      "sha256": "96b61de7d56d23da4915390c700f47e5ff54777ce31f76f2ae944a240296a487"
+    },
+    {
+      "path": "src/sentinel_repair/merged_probe.py",
+      "sha256": "4a977d121dcbdd7517e853bb1e618c5fde4cd529eeb9fcee96c1421c9b2a244e"
+    },
+    {
+      "path": "src/sentinel_repair/offline.py",
+      "sha256": "7c4f2fa9d2fdfea4b70b044b7c8873ab321cf43edc44d27275cdb53b0b8f8d90"
+    },
+    {
+      "path": "src/sentinel_repair/online_linear.py",
+      "sha256": "d409a92ff772ea4cd7c828fab044f3e5b87016fc4a064e78c81c3628e037f7f0"
+    },
+    {
+      "path": "src/sentinel_repair/oracle.py",
+      "sha256": "86512c665c548af8dbc8def9a9b19d4198a5128e42c6d230ccdc5c822c0e0f47"
+    },
+    {
+      "path": "src/sentinel_repair/paired_audit.py",
+      "sha256": "3726cc73bc137174c4273c60e3462dae60fd42961374e2fab5d9f9b02d0483ba"
+    },
+    {
+      "path": "src/sentinel_repair/propagation.py",
+      "sha256": "605e7e9aaefb7dee90f8ffb83e55ef1f36cce0d68e47ff9cbf701d950bb39463"
+    },
+    {
+      "path": "src/sentinel_repair/propagation_eval.py",
+      "sha256": "7302e0d44506cb223b352c54d4f741a7c8b52f77ba640be485c443280457cd0c"
+    },
+    {
+      "path": "src/sentinel_repair/scale_analysis.py",
+      "sha256": "482a63242bd2a6d3259b82748b073dc109c0b8e70d1dbcf857726c4a3b7a4e35"
+    },
+    {
+      "path": "src/sentinel_repair/selectors.py",
+      "sha256": "b16d3b208b9fb3977940bf6f238bc2906df606fce7bb23ce7ed65da09da6a07c"
+    },
+    {
+      "path": "src/sentinel_repair/shared_baseline.py",
+      "sha256": "b8b697293e94c55e0eb645258973a7624cf461cc53c3b7eefd5843bd03127b78"
+    },
+    {
+      "path": "src/sentinel_repair/sweep.py",
+      "sha256": "f7d69e23cc8dcdf3ca5eb2539aff64dcd58359ec0155dda2587a238d76d9ffa0"
+    },
+    {
+      "path": "src/sentinel_repair/text_residual.py",
+      "sha256": "f92df3d2fad263ede004f8c3a05475c720112ceb8f98eb4a29ac17916b9b394a"
+    },
+    {
+      "path": "src/sentinel_repair/update_gate.py",
+      "sha256": "11f587c5d80b3977afac6c2ddfbd1c6a7b5299c1b7947a8bc8417d4d8fe1cdc6"
+    },
+    {
+      "path": "src/sentinel_repair/update_gate_trainer.py",
+      "sha256": "19f77233412c4a95df0c4587c98a2a7dd82f2e1ba4cd497cfbd776bc4438a4fa"
+    },
+    {
+      "path": "scripts/train_full_linear.py",
+      "sha256": "d3c64ed5f4e21368d893703035bfb2bf9b3be39ab752cfc9bcb11c7e0a0f8d1f"
+    },
+    {
+      "path": "scripts/evaluate_full_linear.py",
+      "sha256": "b6a29248fa1ffceb7d8a9a91bf52aa4c39b1070ccdcc84374c5de65181cd512d"
+    },
+    {
+      "path": "scripts/summarize_full_linear.py",
+      "sha256": "2d2ab60d4caf240c657b91be21ceab80f96b356405189800b1ece2782876a2df"
+    },
+    {
+      "path": "scripts/probe_real_gradients.py",
+      "sha256": "f6cecdc679a349160dbea6a34c0765c1e3222df89913f3bb12340958488e5782"
+    },
+    {
+      "path": "scripts/train_online_linear.py",
+      "sha256": "9e51f110262014f2271553df679c144270e72b584faa94d7f65954ee14e6a1e5"
+    },
+    {
+      "path": "scripts/summarize_online_linear.py",
+      "sha256": "1899466f06d5db9c08776359963aa654fade928e226366572e35df59d6048518"
+    },
+    {
+      "path": "scripts/bootstrap_env.sh",
+      "sha256": "8e9bfe2db980e0da1884843a02c40c2a5b51a3a2de421f4f3aaa285fb9bbe30a"
+    },
+    {
+      "path": "scripts/env.sh",
+      "sha256": "4cafb3fab9e301dd7da81ed6ec3cefdf08f15080070504662cf27251453df825"
+    },
+    {
+      "path": "scripts/apply_upstream_patch.sh",
+      "sha256": "f5322a8cef4acc67feaa71fccd98b675b2683ae86b824c45d9c46660ab5b63dd"
+    },
+    {
+      "path": "tests/test_advantages.py",
+      "sha256": "20cc8a1b33dfcfc05de769dcb20ec81053a708dc0bff9b56c423b71d1c828f46"
+    },
+    {
+      "path": "tests/test_online_linear.py",
+      "sha256": "db6ee1fa44e4c8543d65544669de7c32e9522e86b1288a1afa1196e0e9325cee"
+    },
+    {
+      "path": "tests/test_full_linear.py",
+      "sha256": "ecab0e030cc047cb0796def11762f4be3211df92c23313ef7f58df0a2b816daa"
+    },
+    {
+      "path": "tests/test_preaudit_scale.py",
+      "sha256": "00ba6bdeca001a61e83cd708cd46821f4285ebae3e28be411da4db48e74c73a3"
+    },
+    {
+      "path": "tests/test_evaluate_full_linear.py",
+      "sha256": "47cd73222c0a4c2ba57769b694254872ad9655e1c2d262eb3403e7a42812d7b1"
+    },
+    {
+      "path": "tests/test_summarize_full_linear.py",
+      "sha256": "726d55af506f9409ca8bb1ed5a12ff7b91ef14fbaa15002c8ad47a330195f8b9"
+    },
+    {
+      "path": "tests/test_upstream_logging_patch.py",
+      "sha256": "fe9881ff36531d26400d9672054fb8cc146cc75fdefc469a4018486719af0c6f"
+    },
+    {
+      "path": "tests/test_update_gate_trainer.py",
+      "sha256": "0c5e9e63888fad6b1e0a339eb236d0e958ff9934f6dc66353114dc29bd8ea3de"
+    },
+    {
+      "path": "scripts/run_gradient_checkpoint.sh",
+      "sha256": "fd897ec2bf59e60d18dc9fee888b7d0d66d0e8feca8b63a266b039c049c0f33d"
+    }
+  ]
+}

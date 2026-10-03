@@ -1,0 +1,7 @@
+Update,Trusted labels,Accuracy (\%),Wrong-trigger share (\%)
+Full-oracle RLOO,"10,240",73.83,0.00
+Cheap RLOO,0,4.30,95.31
+Direct replacement,102,3.52,96.48
+Linear IPW,102,53.52,17.19
+Sparse oracle-only,102,58.59,1.17
+Centered sparse oracle,102,57.03,0.39

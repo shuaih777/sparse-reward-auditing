@@ -1,0 +1,85 @@
+{
+  "source_report": "reports/update-gate-warm-20260911-01/summary.json",
+  "selection": {
+    "methods": [
+      "cheap_rloo"
+    ]
+  },
+  "uncertainty_scope": "Observer trajectories: summary aggregates only; no paired-question SE computed.",
+  "runs": [
+    {
+      "run": "runs/local/full-update-observer-cheap-rloo-s303-20260911-01",
+      "proposal": "cheap_rloo",
+      "seed": 303,
+      "planned_steps": 40,
+      "training_complete": true,
+      "validated_steps": 40,
+      "config_sha256": "78ae1a23e3375f9884d438eb0bf6526c3d348fbeb424c262ea4f9e6013ce96ca",
+      "heldout": {
+        "complete": true,
+        "path": "runs/local/full-update-observer-cheap-rloo-eval-s303-20260911-01",
+        "evaluations": [
+          {
+            "step": 0,
+            "accuracy": 0.38671875,
+            "fp_occupancy": 0.0625,
+            "completion_count": 256
+          },
+          {
+            "step": 20,
+            "accuracy": 0.03125,
+            "fp_occupancy": 0.93359375,
+            "completion_count": 256
+          },
+          {
+            "step": 40,
+            "accuracy": 0.03125,
+            "fp_occupancy": 0.96484375,
+            "completion_count": 256
+          }
+        ],
+        "evaluator_oracle_calls": 1024,
+        "learner_labels_used": false
+      },
+      "observer_labels": 102,
+      "policy_learner_labels": 0
+    },
+    {
+      "run": "runs/local/full-update-observer-cheap-rloo-s202-20260911-01",
+      "proposal": "cheap_rloo",
+      "seed": 202,
+      "planned_steps": 40,
+      "training_complete": true,
+      "validated_steps": 40,
+      "config_sha256": "bd9eac48fea67a429bc027cfab1812e75497a2babe4cbd97c66a026f0f52687a",
+      "heldout": {
+        "complete": true,
+        "path": "runs/local/full-update-observer-cheap-rloo-eval-s202-20260911-01",
+        "evaluations": [
+          {
+            "step": 0,
+            "accuracy": 0.421875,
+            "fp_occupancy": 0.04296875,
+            "completion_count": 256
+          },
+          {
+            "step": 20,
+            "accuracy": 0.03125,
+            "fp_occupancy": 0.95703125,
+            "completion_count": 256
+          },
+          {
+            "step": 40,
+            "accuracy": 0.02734375,
+            "fp_occupancy": 0.96875,
+            "completion_count": 256
+          }
+        ],
+        "evaluator_oracle_calls": 1024,
+        "learner_labels_used": false
+      },
+      "observer_labels": 102,
+      "policy_learner_labels": 0
+    }
+  ]
+}

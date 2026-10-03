@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this code."
+title: "When Group Normalization Undermines Sparse Reward Auditing in RLVR"
+type: software
+repository-code: "https://github.com/shuaih777/sparse-reward-auditing"
+authors:
+  - family-names: Huang
+    given-names: Shuai
+identifiers:
+  - type: url
+    value: "https://openreview.net/forum?id=wIdP9gK259"

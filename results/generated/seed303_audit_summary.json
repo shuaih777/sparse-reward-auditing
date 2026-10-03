@@ -1,0 +1,19 @@
+{
+  "full-python-group-scaled-ipw-s303-long-01": {
+    "audits": 307,
+    "audited_false_positives": 275
+  },
+  "full-python-linear-ipw-s303-long-01": {
+    "audits": 307,
+    "audited_false_positives": 45,
+    "windows_inclusive": {
+      "20-30": 0,
+      "31-40": 10,
+      "41-50": 12,
+      "91-101": 0
+    },
+    "steps_with_audited_fp": 36,
+    "fp_steps_grad_norm_above_one": 34,
+    "no_fp_steps_grad_norm_above_one": 0
+  }
+}
